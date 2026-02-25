@@ -1,0 +1,6 @@
+{
+  "transports": ["http+sse"],
+  "sse_endpoint": "/sse",
+  "messages_endpoint": "/messages",
+  "description": "MCP server for Heroic Adventures Assistant - read-only access to rules, assets, skills, prompts, agents, and onboarding info."
+}

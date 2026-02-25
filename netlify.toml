@@ -1,0 +1,11 @@
+[[edge_functions]]
+  path = "/messages"
+  function = "messages"
+
+[[edge_functions]]
+  path = "/sse"
+  function = "sse"
+
+[build]
+  publish = "."
+  command = ""
