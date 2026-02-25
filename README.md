@@ -1,54 +1,78 @@
 # Heroic Adventures Assistant
 
-This repository is a Copilot-powered Game Master toolkit for **Heroic Adventures 2nd Edition**.
-It is structured for GitHub Copilot in VS Code to answer rules questions, generate campaign content, and support live session adjudication with outputs grounded in your official rulebook.
+An MCP (Model Context Protocol) server that serves **Heroic Adventures 2nd Edition** rulebook content via dynamically generated tools. Deployed on Netlify as edge functions.
 
-## What this repository contains
+## Project Structure
 
-- `assets/`: Canonical source material.
-	- `HA Players Handbook 2nd Edition.docx`
-	- `rules-full.md` (full conversion from DOCX)
-	- `rules-index.md` (heading index)
-	- `images/media/` (extracted rulebook images)
-- `.github/copilot-instructions.md`: Always-on workspace guidance.
-- `.github/skills/`: Reusable capabilities for rules, character workflows, encounters, monsters, and campaign prep.
-- `.github/prompts/`: Slash-command style prompts for repeated workflows.
-- `.github/agents/`: Role-focused custom agents for rules, GMing, and content generation.
+```
+assets/knowledge/       — MCP-served knowledge content
+  chapters/             — Rulebook chapter text
+  rules/                — Thematic rule summaries
+  skills/               — Skills and prompt templates
+  agents/               — Agent persona definitions
+netlify/edge-functions/ — Netlify Edge Functions (MCP server)
+static/file-index.json  — Knowledge folder registry
+scripts/                — Test and debug utilities
+.github/skills/         — Developer workflow skills (NOT served via MCP)
+.github/prompts/        — Developer prompt templates (NOT served via MCP)
+```
 
-## How to use
+## Quick Start
 
-1. Open this workspace in VS Code.
-2. Use Copilot Chat in agent mode for complex tasks.
-3. Ask natural prompts for rules lookup, prep, balancing, and generation.
-4. Use `/` to run prompt files and skills.
+```bash
+npm install        # Install dependencies
+npm start          # Run local dev server at http://localhost:8888
+npm test           # Run MCP smoke tests
+```
 
-## Design goals
+## How It Works
 
-- Prioritize rule fidelity over invention.
-- Use chapter and thematic rules skills for fast retrieval.
-- Produce practical, table-ready output.
-- Keep generated content consistent with Heroic Adventures terminology.
+The server dynamically generates MCP tools based on the folders listed in `static/file-index.json`. Each knowledge folder (e.g., `chapters`, `rules`) automatically gets three tools:
 
-## Run locally (MCP)
+| Tool | Description |
+|---|---|
+| `<folder>_info` | Returns the folder's `info.md` overview |
+| `<folder>_list` | Lists entries parsed from the `info.md` table |
+| `<folder>_get` | Returns a specific entry by name |
 
-- Install dependencies once: `npm install`
-- Start local server from repo root: `npm start`
-- Run MCP smoke test: `npm test`
-- SSE stream test: `curl -N http://localhost:8888/sse`
-- Tool call test:
-	- `curl -X POST http://localhost:8888/messages -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","id":1,"method":"tool_call","params":{"name":"list_rules","input":{"filter":"initiative"}}}'`
+## Adding Content
 
-If you add/remove assets, skills, prompts, or agents, update `static/file-index.json` before testing.
+1. Add a `.md` file to `assets/knowledge/<folder>/entries/`.
+2. Update `assets/knowledge/<folder>/info.md` with a table row for the new entry.
+3. To add a new folder, also add it to `knowledge_folders` in `static/file-index.json`.
 
-##### `mcp.json`
+See the `add-knowledge-content` skill for detailed instructions.
+
+## MCP Client Configuration
 
 ```json
 {
-	"servers": {
-		"heroic-adventures-assistant": {
-			"type": "http",
-			"url": "http://localhost:8888/sse"
-		}
-	}
+  "servers": {
+    "heroic-adventures-assistant": {
+      "type": "http",
+      "url": "http://localhost:8888/sse"
+    }
+  }
 }
 ```
+
+## Testing
+
+```bash
+# SSE stream test
+curl -N http://localhost:8888/sse
+
+# List available tools
+curl -X POST http://localhost:8888/sse \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list","params":{}}'
+
+# Get a specific entry
+curl -X POST http://localhost:8888/sse \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","id":2,"method":"tools/call","params":{"name":"chapters_get","arguments":{"entry-name":"chapter-01-introduction"}}}'
+```
+
+## Deployment
+
+Push to the `main` branch to deploy to Netlify. The site serves static files and edge functions automatically.
