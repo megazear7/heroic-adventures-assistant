@@ -136,8 +136,10 @@
       <p class="section-subtitle">Choose your AI app below and follow the steps. No coding required!</p>
 
       <div class="setup-tabs">
-        <button class="tab active" data-tab="claude">Claude</button>
-        <button class="tab" data-tab="copilot">VS Code / Copilot</button>
+        <button class="tab active" data-tab="copilot">VS Code</button>
+        <button class="tab" data-tab="codex">Codex</button>
+        <button class="tab" data-tab="cursor">Cursor</button>
+        <button class="tab" data-tab="claude">Claude</button>
         <button class="tab" data-tab="other">Other Apps</button>
       </div>
 
@@ -171,6 +173,7 @@
   }
 }</pre>
                 </div>
+                <p>See the <a href="https://code.claude.com/docs/en/mcp#option-2-add-a-remote-sse-server" target="_blank">Claude MCP docs</a>.</p>
               </div>
             </div>
             <div class="setup-step">
@@ -196,7 +199,7 @@
               <div class="setup-step-num">2</div>
               <div>
                 <h4>Add MCP Server Config</h4>
-                <p>Search for <strong>"MCP"</strong> in settings, or create/edit a <code>.vscode/mcp.json</code> file in any workspace:</p>
+                <p>Search for <strong>"MCP"</strong> in settings, or create/edit a <code>.vscode/mcp.json</code> file in any workspace. See the <a href="https://code.visualstudio.com/docs/copilot/customization/mcp-servers" target="_blank">VS Code MCP docs</a>.</p>
                 <div class="code-block">
                   <div class="code-header">
                     <span>.vscode/mcp.json</span>
@@ -218,6 +221,80 @@
               <div>
                 <h4>Use Copilot Chat</h4>
                 <p>Open Copilot Chat in VS Code. It can now access Heroic Adventures content. Try: <em>"What are the rules for initiative?"</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="setup-panel" id="panel-codex">
+          <div class="setup-steps">
+            <div class="setup-step">
+              <div class="setup-step-num">1</div>
+              <div>
+                <h4>Open Codex Config</h4>
+                <p>In the Codex IDE extension, go to MCP settings &gt; Open config.toml. Or edit <code>~/.codex/config.toml</code> (or project .codex/config.toml). See <a href="https://developers.openai.com/codex/mcp" target="_blank">Codex MCP docs</a>.</p>
+              </div>
+            </div>
+            <div class="setup-step">
+              <div class="setup-step-num">2</div>
+              <div>
+                <h4>Add the Server</h4>
+                <p>Add this to your config.toml under [mcp_servers]:</p>
+                <div class="code-block">
+                  <div class="code-header">
+                    <span>config.toml</span>
+                    <button class="copy-btn" data-copy="codex-config">Copy</button>
+                  </div>
+                  <pre id="codex-config">[mcp_servers.heroic-adventures]
+url = "https://mcp.heroicadventures.app/sse"</pre>
+                </div>
+              </div>
+            </div>
+            <div class="setup-step">
+              <div class="setup-step-num">3</div>
+              <div>
+                <h4>Start Using</h4>
+                <p>Run <code>codex mcp</code> to verify. Ask Codex: <em>"Build a level 3 fighter in Heroic Adventures"</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="setup-panel" id="panel-cursor">
+          <div class="setup-steps">
+            <div class="setup-step">
+              <div class="setup-step-num">1</div>
+              <div>
+                <h4>Create Cursor MCP Config</h4>
+                <p>Create/edit &lt;code&gt;~/.cursor/mcp.json&lt;/code&gt; (global) or &lt;code&gt;.cursor/mcp.json&lt;/code&gt; (project-specific). See &lt;a href=&quot;https://cursor.com/docs/context/mcp&quot; target=&quot;_blank&quot;&gt;Cursor MCP docs&lt;/a&gt;.&lt;/p&gt;
+              </div>
+            </div>
+            <div class="setup-step">
+              <div class="setup-step-num">2</div>
+              <div>
+                <h4>Add Heroic Adventures Server</h4>
+                <p>Add this to your mcp.json:</p>
+                <div class="code-block">
+                  <div class="code-header">
+                    <span>mcp.json</span>
+                    <button class="copy-btn" data-copy="cursor-config">Copy</button>
+                  </div>
+                  <pre id="cursor-config">
+{
+  "mcpServers": {
+    "heroic-adventures": {
+      "url": "https://mcp.heroicadventures.app/sse"
+    }
+  }
+}
+</pre>
+              </div>
+            </div>
+            <div class="setup-step">
+              <div class="setup-step-num">3</div>
+              <div>
+                <h4>Reload and Use</h4>
+                <p>Restart Cursor or reload window (Cmd+R). Ask in chat: <em>&quot;What are Heroic Adventures spells?&quot;</em></p>
               </div>
             </div>
           </div>
