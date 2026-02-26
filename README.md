@@ -2,6 +2,19 @@
 
 An MCP (Model Context Protocol) server that serves **Heroic Adventures 2nd Edition** rulebook content via dynamically generated tools. Deployed on Netlify as edge functions.
 
+To connect to this MCP server, use the `https://mcp.heroicadventures.app/sse` url. See the `mcp.json` example below.
+
+```json
+{
+	"servers": {
+		"heroic-adventures": {
+			"type": "sse",
+			"url": "https://mcp.heroicadventures.app/sse"
+		}
+	}
+}
+```
+
 ## Project Structure
 
 ```
