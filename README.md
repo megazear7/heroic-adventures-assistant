@@ -34,9 +34,18 @@ scripts/                — Test and debug utilities
 
 ```bash
 npm install        # Install dependencies
-npm start          # Run local dev server at http://localhost:8888
+npm start          # Run website + MCP server in parallel
 npm test           # Run MCP smoke tests
 ```
+
+`npm start` runs two servers side by side:
+
+| Server | URL | Purpose |
+|---|---|---|
+| Website | http://localhost:3000 | Landing page (`index.html`) |
+| MCP Server | http://localhost:8888/sse | MCP endpoint for AI clients |
+
+Open http://localhost:3000 in your browser to view the website. The MCP server at port 8888 is used by AI clients (Claude, Copilot, etc.).
 
 ## How It Works
 

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heroic Adventures Assistant — AI-Powered Companion</title>
+  <meta name="description" content="Connect your AI assistant to the Heroic Adventures 2nd Edition rulebook. Get instant rules lookups, character building, encounter design, and more.">
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="hero-badge">MCP Server</div>
+      <h1 class="hero-title">Heroic Adventures<br><span>Assistant</span></h1>
+      <p class="hero-subtitle">Your AI-powered companion for <strong>Heroic Adventures 2nd Edition</strong>. Connect it to Claude, Copilot, or any MCP-compatible AI and get instant access to rules, character building, encounter design, and more.</p>
+      <div class="hero-actions">
+        <a href="#setup" class="btn btn-primary">Get Started</a>
+        <a href="#features" class="btn btn-outline">See What It Does</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features" class="section features">
+    <div class="container">
+      <h2 class="section-title">What Can It Do?</h2>
+      <p class="section-subtitle">The assistant gives your AI deep knowledge of Heroic Adventures 2nd Edition. Here's what becomes possible:</p>
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">📖</div>
+          <h3>Rules Lookup</h3>
+          <p>Ask about any rule — combat, spells, equipment, movement — and get accurate answers straight from the rulebook.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">⚔️</div>
+          <h3>Character Creation</h3>
+          <p>Build complete characters from concept to ready-to-play sheet, with race, class, spells, and equipment all accounted for.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🐉</div>
+          <h3>Encounter Design</h3>
+          <p>Generate balanced encounters with proper difficulty scaling, monster selection, and tactical terrain suggestions.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🗺️</div>
+          <h3>Adventure Generation</h3>
+          <p>Create full adventure hooks, one-shots, or campaign arcs tailored to your party's level and play style.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">👹</div>
+          <h3>Monster Building</h3>
+          <p>Design custom monsters from a theme or role, complete with stat blocks, abilities, and action economy.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎲</div>
+          <h3>Session Support</h3>
+          <p>Run live sessions with turn adjudication, quick rulings, treasure drops, and NPC generation on the fly.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section how-it-works">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-subtitle">This server uses the <strong>Model Context Protocol (MCP)</strong> — an open standard that lets AI assistants connect to external knowledge sources. Think of it as giving your AI a copy of the Heroic Adventures rulebook.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>You connect your AI</h3>
+            <p>Add our server URL to your AI app's settings. It takes about 30 seconds.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Your AI gains Heroic Adventures knowledge</h3>
+            <p>It can now look up chapters, rules, skills, and agent personas from the full 2nd Edition rulebook.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Ask it anything</h3>
+            <p>Build characters, design encounters, look up rules, generate adventures — all through natural conversation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Setup Section -->
+  <section id="setup" class="section setup">
+    <div class="container">
+      <h2 class="section-title">Get Connected in Minutes</h2>
+      <p class="section-subtitle">Choose your AI app below and follow the steps. No coding required!</p>
+
+      <div class="setup-tabs">
+        <button class="tab active" data-tab="claude">Claude</button>
+        <button class="tab" data-tab="copilot">VS Code / Copilot</button>
+        <button class="tab" data-tab="other">Other Apps</button>
+      </div>
+
+      <div class="setup-panels">
+
+        <div class="setup-panel active" id="panel-claude">
+          <div class="setup-steps">
+            <div class="setup-step">
+              <div class="setup-step-num">1</div>
+              <div>
+                <h4>Open Claude Settings</h4>
+                <p>In the Claude desktop app, go to <strong>Settings → MCP Servers</strong> (or <strong>Developer → Edit Config</strong> on older versions).</p>
+              </div>
+            </div>
+            <div class="setup-step">
+              <div class="setup-step-num">2</div>
+              <div>
+                <h4>Add a New Server</h4>
+                <p>Click <strong>"Add Server"</strong> or edit your config file. Add the following:</p>
+                <div class="code-block">
+                  <div class="code-header">
+                    <span>MCP Configuration</span>
+                    <button class="copy-btn" data-copy="claude-config">Copy</button>
+                  </div>
+                  <pre id="claude-config">{
+  "servers": {
+    "heroic-adventures": {
+      "type": "sse",
+      "url": "https://mcp.heroicadventures.app/sse"
+    }
+  }
+}</pre>
+                </div>
+              </div>
+            </div>
+            <div class="setup-step">
+              <div class="setup-step-num">3</div>
+              <div>
+                <h4>Start Chatting!</h4>
+                <p>Open a new conversation. Claude now has access to the full Heroic Adventures rulebook. Try asking: <em>"Build me a Level 3 Dwarf Fighter"</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="setup-panel" id="panel-copilot">
+          <div class="setup-steps">
+            <div class="setup-step">
+              <div class="setup-step-num">1</div>
+              <div>
+                <h4>Open VS Code Settings</h4>
+                <p>Open VS Code and go to your <strong>Settings</strong> (Cmd+, on Mac, Ctrl+, on Windows).</p>
+              </div>
+            </div>
+            <div class="setup-step">
+              <div class="setup-step-num">2</div>
+              <div>
+                <h4>Add MCP Server Config</h4>
+                <p>Search for <strong>"MCP"</strong> in settings, or create/edit a <code>.vscode/mcp.json</code> file in any workspace:</p>
+                <div class="code-block">
+                  <div class="code-header">
+                    <span>.vscode/mcp.json</span>
+                    <button class="copy-btn" data-copy="copilot-config">Copy</button>
+                  </div>
+                  <pre id="copilot-config">{
+  "servers": {
+    "heroic-adventures": {
+      "type": "sse",
+      "url": "https://mcp.heroicadventures.app/sse"
+    }
+  }
+}</pre>
+                </div>
+              </div>
+            </div>
+            <div class="setup-step">
+              <div class="setup-step-num">3</div>
+              <div>
+                <h4>Use Copilot Chat</h4>
+                <p>Open Copilot Chat in VS Code. It can now access Heroic Adventures content. Try: <em>"What are the rules for initiative?"</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="setup-panel" id="panel-other">
+          <div class="setup-steps">
+            <div class="setup-step">
+              <div class="setup-step-num">1</div>
+              <div>
+                <h4>Find MCP Settings</h4>
+                <p>Any app that supports the <strong>Model Context Protocol</strong> can connect. Look for "MCP", "Tools", or "Server" settings in your app.</p>
+              </div>
+            </div>
+            <div class="setup-step">
+              <div class="setup-step-num">2</div>
+              <div>
+                <h4>Enter the Server URL</h4>
+                <p>Use this URL as an SSE-type MCP server:</p>
+                <div class="code-block">
+                  <div class="code-header">
+                    <span>Server URL</span>
+                    <button class="copy-btn" data-copy="other-config">Copy</button>
+                  </div>
+                  <pre id="other-config">https://mcp.heroicadventures.app/sse</pre>
+                </div>
+              </div>
+            </div>
+            <div class="setup-step">
+              <div class="setup-step-num">3</div>
+              <div>
+                <h4>You're All Set</h4>
+                <p>Your AI can now pull from the Heroic Adventures 2nd Edition rulebook whenever you ask it to.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Available Tools -->
+  <section class="section tools-section">
+    <div class="container">
+      <h2 class="section-title">Available Tools</h2>
+      <p class="section-subtitle">Once connected, your AI automatically gets access to these tool categories:</p>
+      <div class="tools-grid">
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <h3>📜 Chapters</h3>
+          </div>
+          <p>All 12 chapters of the rulebook — from Introduction to the Monster Manual. Full text, searchable by your AI.</p>
+          <div class="tool-commands">
+            <code>chapters_info</code>
+            <code>chapters_list</code>
+            <code>chapters_get</code>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <h3>⚖️ Rules</h3>
+          </div>
+          <p>17 thematic rule summaries covering combat, spells, equipment, leveling, mass battle, and more.</p>
+          <div class="tool-commands">
+            <code>rules_info</code>
+            <code>rules_list</code>
+            <code>rules_get</code>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <h3>🛠️ Skills</h3>
+          </div>
+          <p>17 ready-made skill templates — character creation, encounter building, session prep, treasure drops, and more.</p>
+          <div class="tool-commands">
+            <code>skills_info</code>
+            <code>skills_list</code>
+            <code>skills_get</code>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <h3>🎭 Agents</h3>
+          </div>
+          <p>5 specialized AI personas — Heroic GM, Rules Librarian, Character Builder, Encounter Designer, and Campaign Architect.</p>
+          <div class="tool-commands">
+            <code>agents_info</code>
+            <code>agents_list</code>
+            <code>agents_get</code>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do I need to be a developer to use this?</span>
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Not at all! If you can copy and paste a URL into your AI app's settings, you're good to go. The setup takes about 30 seconds.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is it free?</span>
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, the Heroic Adventures Assistant is completely free to use. You just need a subscription to an AI app that supports MCP (like Claude Pro or VS Code with Copilot).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What AI apps work with this?</span>
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Any app that supports the Model Context Protocol (MCP) with SSE transport. This includes <strong>Claude Desktop</strong>, <strong>VS Code with GitHub Copilot</strong>, and a growing number of other AI tools.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What can I ask it?</span>
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Anything about Heroic Adventures 2nd Edition! Examples: "Build me a Level 5 Elf Mage", "What are the rules for opportunity attacks?", "Design an encounter for 4 Level 3 players", "Generate a dungeon adventure hook", "What spells does a Cleric get at Level 4?"</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Does the AI remember my campaign?</span>
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>The MCP server itself is stateless — it just provides rulebook knowledge. But your AI app (like Claude) remembers context within a conversation, so you can build on previous answers during a session.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How current is the content?</span>
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>The server always has the latest version of the Heroic Adventures 2nd Edition content. Updates are deployed automatically — no action needed on your end.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Level Up Your Game?</h2>
+        <p>Connect in under a minute and let AI handle the rules while you focus on the adventure.</p>
+        <a href="#setup" class="btn btn-primary btn-lg">Get Started Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Heroic Adventures Assistant &mdash; An MCP server for Heroic Adventures 2nd Edition</p>
+      <p class="footer-sub">Built with ❤️ for Game Masters everywhere</p>
+    </div>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

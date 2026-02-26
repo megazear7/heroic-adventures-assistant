@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "node scripts/test-mcp.js",
-    "start": "netlify dev --no-open"
+    "start": "concurrently -n web,mcp -c blue,green \"npm:serve:website\" \"npm:serve:mcp\"",
+    "serve:website": "http-server . -p 3000 -s",
+    "serve:mcp": "netlify dev --no-open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^9.1.0",
+    "http-server": "^14.1.1",
     "netlify-cli": "^24.0.0"
   }
 }
