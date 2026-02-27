@@ -167,8 +167,8 @@
                   <pre id="claude-config">{
   "servers": {
     "heroic-adventures": {
-      "type": "sse",
-      "url": "https://mcp.heroicadventures.app/sse"
+      "type": "http",
+      "url": "https://mcp.heroicadventures.app/mcp"
     }
   }
 }</pre>
@@ -208,8 +208,8 @@
                   <pre id="copilot-config">{
   "servers": {
     "heroic-adventures": {
-      "type": "sse",
-      "url": "https://mcp.heroicadventures.app/sse"
+      "type": "http",
+      "url": "https://mcp.heroicadventures.app/mcp"
     }
   }
 }</pre>
@@ -246,7 +246,7 @@
                     <button class="copy-btn" data-copy="codex-config">Copy</button>
                   </div>
                   <pre id="codex-config">[mcp_servers.heroic-adventures]
-url = "https://mcp.heroicadventures.app/sse"</pre>
+url = "https://mcp.heroicadventures.app/mcp"</pre>
                 </div>
               </div>
             </div>
@@ -283,7 +283,7 @@ url = "https://mcp.heroicadventures.app/sse"</pre>
 {
   "mcpServers": {
     "heroic-adventures": {
-      "url": "https://mcp.heroicadventures.app/sse"
+      "url": "https://mcp.heroicadventures.app/mcp"
     }
   }
 }
@@ -313,13 +313,13 @@ url = "https://mcp.heroicadventures.app/sse"</pre>
               <div class="setup-step-num">2</div>
               <div>
                 <h4>Enter the Server URL</h4>
-                <p>Use this URL as an SSE-type MCP server:</p>
+                <p>Use this URL as an HTTP-type MCP server:</p>
                 <div class="code-block">
                   <div class="code-header">
                     <span>Server URL</span>
                     <button class="copy-btn" data-copy="other-config">Copy</button>
                   </div>
-                  <pre id="other-config">https://mcp.heroicadventures.app/sse</pre>
+                  <pre id="other-config">https://mcp.heroicadventures.app/mcp</pre>
                 </div>
               </div>
             </div>
@@ -428,7 +428,7 @@ url = "https://mcp.heroicadventures.app/sse"</pre>
             <span class="faq-chevron">▾</span>
           </button>
           <div class="faq-answer">
-            <p>Any app that supports the Model Context Protocol (MCP) with SSE transport. This includes <strong>Claude Desktop</strong>, <strong>VS Code with GitHub Copilot</strong>, and a growing number of other AI tools.</p>
+            <p>Any app that supports the Model Context Protocol (MCP) with Streamable HTTP transport. This includes <strong>Claude Desktop</strong>, <strong>VS Code with GitHub Copilot</strong>, and a growing number of other AI tools.</p>
           </div>
         </div>
 
