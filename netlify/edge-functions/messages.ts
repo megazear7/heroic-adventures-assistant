@@ -1,10 +1,7 @@
-// --- Types ---
+import type { Context } from "./lib/shared.ts";
+import { getQueue } from "./lib/shared.ts";
 
-type Context = {
-  site?: {
-    url?: string;
-  };
-};
+// --- Types ---
 
 type JsonRpcRequest = {
   jsonrpc: string;
@@ -18,10 +15,6 @@ type JsonRpcId = string | number | null;
 type FileIndex = {
   knowledge_folders: string[];
 };
-
-// --- Shared queue (module-scoped so SSE and messages share state) ---
-
-const queue: unknown[] = [];
 
 // --- Constants ---
 
@@ -37,7 +30,7 @@ This is a read-only MCP server for the Heroic Adventures Assistant.
 It provides access to rulebook chapters, rules summaries, skills, prompts, and agent definitions.
 
 How to use:
-1. Connect an MCP client using HTTP+SSE.
+1. Connect an MCP client using Streamable HTTP (POST /mcp or /sse) or legacy SSE (GET /sse + POST /messages).
 2. Discover tools with tools/list.
 3. For each knowledge folder, three tools are available:
    - <folder>_info  — Get an overview of the folder contents
@@ -46,7 +39,8 @@ How to use:
 
 All content is static and served from Netlify CDN-hosted repo files.`;
 
-const MCP_PROTOCOL_VERSION = "2024-11-05";
+const SUPPORTED_PROTOCOL_VERSIONS = ["2025-03-26", "2024-11-05"];
+const MCP_PROTOCOL_VERSION = SUPPORTED_PROTOCOL_VERSIONS[0];
 
 const SERVER_INFO = {
   name: "heroic-adventures-mcp",
@@ -270,8 +264,14 @@ export async function processJsonRpc(
   const id = body.id ?? null;
 
   if (body.method === "initialize") {
+    const initParams = (body.params ?? {}) as { protocolVersion?: string };
+    const clientVersion = initParams.protocolVersion;
+    const negotiatedVersion =
+      clientVersion && SUPPORTED_PROTOCOL_VERSIONS.includes(clientVersion)
+        ? clientVersion
+        : MCP_PROTOCOL_VERSION;
     return jsonRpcResult(id, {
-      protocolVersion: MCP_PROTOCOL_VERSION,
+      protocolVersion: negotiatedVersion,
       capabilities: SERVER_CAPABILITIES,
       serverInfo: SERVER_INFO,
     });
@@ -332,7 +332,7 @@ export default async (request: Request, context: Context): Promise<Response> => 
 
   const response = await processJsonRpc(body, request, context);
   if (response) {
-    queue.push(response);
+    getQueue().push(response);
   }
   return new Response(null, { status: 202 });
 };
@@ -352,8 +352,9 @@ export function handleSse(request: Request): Response {
       }, 15000);
 
       const poller = setInterval(() => {
-        while (queue.length > 0) {
-          const item = queue.shift();
+        const q = getQueue();
+        while (q.length > 0) {
+          const item = q.shift();
           controller.enqueue(encoder.encode(`event: message\ndata: ${JSON.stringify(item)}\n\n`));
         }
       }, 500);
@@ -376,6 +377,7 @@ export function handleSse(request: Request): Response {
       "Content-Type": "text/event-stream",
       "Cache-Control": "no-cache",
       Connection: "keep-alive",
+      "Access-Control-Allow-Origin": "*",
     },
   });
 }

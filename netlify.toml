@@ -6,6 +6,10 @@
   path = "/sse"
   function = "sse"
 
+[[edge_functions]]
+  path = "/mcp"
+  function = "sse"
+
 [build]
   publish = "."
   command = ""
