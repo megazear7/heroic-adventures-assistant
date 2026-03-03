@@ -1,6 +1,6 @@
 import type { Context } from "./lib/shared.ts";
 import { getQueue } from "./lib/shared.ts";
-import { PDFDocument } from "https://esm.sh/pdf-lib@1.17.1?bundle-deps";
+import { PDFDocument, PDFName } from "https://esm.sh/pdf-lib@1.17.1?bundle-deps";
 
 // --- Types ---
 
@@ -296,8 +296,17 @@ function fillCheckbox(form: ReturnType<InstanceType<typeof PDFDocument>["getForm
     cb.check();
     cb.enableReadOnly();
   } else {
-    // Remove unchecked checkboxes entirely so no bounding box artifact remains
-    form.removeField(cb);
+    // Clear widget appearances so unchecked boxes are invisible after flattening
+    // (form.removeField fails on production Netlify Edge due to internal type mismatches)
+    cb.uncheck();
+    const widgets = cb.acroField.getWidgets();
+    for (const widget of widgets) {
+      widget.dict.delete(PDFName.of("AP"));
+      widget.dict.delete(PDFName.of("MK"));
+      widget.dict.delete(PDFName.of("BS"));
+      widget.dict.delete(PDFName.of("Border"));
+    }
+    cb.enableReadOnly();
   }
 }
 
