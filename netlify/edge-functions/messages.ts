@@ -162,9 +162,9 @@ function buildToolDefinitions(folders: string[], index: FileIndex): unknown[] {
   }
 
   tools.push({
-    name: "fill_character-sheet-basic",
+    name: "fill_character_sheet",
     description:
-      "Fill in the Heroic Adventures basic character sheet PDF with the provided data and return the completed form",
+      "Fill in the Heroic Adventures character sheet PDF with the provided data and return the completed form",
     inputSchema: {
       type: "object",
       properties: {
@@ -172,16 +172,47 @@ function buildToolDefinitions(folders: string[], index: FileIndex): unknown[] {
           type: "string",
           description: "The desired file name for the filled PDF (without the .pdf extension)",
         },
-        characterName: {
-          type: "string",
-          description: "The character's name to fill in the Character Name field",
+        characterName: { type: "string", description: "The character's name" },
+        race: { type: "string", description: "The character's race" },
+        class: { type: "string", description: "The character's class" },
+        level: { type: "string", description: "The character's level" },
+        experience: { type: "string", description: "The character's experience points" },
+        playerName: { type: "string", description: "The player's name" },
+        skill: { type: "string", description: "The character's Skill stat value" },
+        agility: { type: "string", description: "The character's Agility stat value" },
+        intelligence: { type: "string", description: "The character's Intelligence stat value" },
+        willpower: { type: "string", description: "The character's Willpower stat value" },
+        strength: { type: "string", description: "The character's Strength stat value" },
+        tactics: { type: "string", description: "The character's Tactics stat value" },
+        aim: { type: "string", description: "The character's Aim stat value" },
+        initiative: { type: "string", description: "The character's Initiative value" },
+        minorMovement: { type: "string", description: "The character's minor movement value" },
+        majorMovement: { type: "string", description: "The character's major movement value" },
+        flaw: { type: "string", description: "The character's flaw" },
+        background: { type: "string", description: "The character's background" },
+        twoStats: {
+          type: "array",
+          items: { type: "string", enum: ["SK", "AG", "AIM", "TAC", "INT", "WLP", "STR", "INIT"] },
+          description: "The character's +2 stats (array of stat abbreviations)",
         },
-        skillTraining1: {
-          type: "boolean",
-          description: "Whether the Skill Training 1 checkbox should be checked",
+        oneStats: {
+          type: "array",
+          items: { type: "string", enum: ["SK", "AG", "AIM", "TAC", "INT", "WLP", "STR", "INIT"] },
+          description: "The character's +1 stats (array of stat abbreviations)",
         },
+        age: { type: "string", description: "The character's age" },
+        weight: { type: "string", description: "The character's weight" },
+        height: { type: "string", description: "The character's height" },
+        skillTraining: { type: "integer", minimum: 0, maximum: 5, description: "Number of Skill training checkboxes to check (0-5)" },
+        agilityTraining: { type: "integer", minimum: 0, maximum: 5, description: "Number of Agility training checkboxes to check (0-5)" },
+        aimTraining: { type: "integer", minimum: 0, maximum: 5, description: "Number of Aim training checkboxes to check (0-5)" },
+        tacticsTraining: { type: "integer", minimum: 0, maximum: 5, description: "Number of Tactics training checkboxes to check (0-5)" },
+        intelligenceTraining: { type: "integer", minimum: 0, maximum: 5, description: "Number of Intelligence training checkboxes to check (0-5)" },
+        willpowerTraining: { type: "integer", minimum: 0, maximum: 5, description: "Number of Willpower training checkboxes to check (0-5)" },
+        strengthTraining: { type: "integer", minimum: 0, maximum: 5, description: "Number of Strength training checkboxes to check (0-5)" },
+        initiativeTraining: { type: "integer", minimum: 0, maximum: 5, description: "Number of Initiative training checkboxes to check (0-5)" },
       },
-      required: ["fileName", "characterName", "skillTraining1"],
+      required: ["fileName", "characterName"],
     },
   });
 
@@ -251,6 +282,37 @@ async function listEntries(baseUrl: string, folder: string, filter?: string): Pr
   }
 }
 
+// --- PDF form fill helpers ---
+
+function fillText(form: ReturnType<InstanceType<typeof PDFDocument>["getForm"]>, fieldName: string, value: string): void {
+  const field = form.getTextField(fieldName);
+  field.setText(value);
+  field.enableReadOnly();
+}
+
+function fillCheckbox(form: ReturnType<InstanceType<typeof PDFDocument>["getForm"]>, fieldName: string, checked: boolean): void {
+  const cb = form.getCheckBox(fieldName);
+  if (checked) {
+    cb.check();
+    cb.enableReadOnly();
+  } else {
+    // Remove unchecked checkboxes entirely so no bounding box artifact remains
+    form.removeField(cb);
+  }
+}
+
+function fillTraining(
+  form: ReturnType<InstanceType<typeof PDFDocument>["getForm"]>,
+  statName: string,
+  count: number,
+): void {
+  const maxBoxes = 5;
+  const clamped = Math.max(0, Math.min(maxBoxes, Math.floor(count)));
+  for (let i = 1; i <= maxBoxes; i++) {
+    fillCheckbox(form, `${statName} Training ${i}`, i <= clamped);
+  }
+}
+
 // --- Tool dispatch ---
 
 async function handleToolCall(
@@ -289,30 +351,86 @@ async function handleToolCall(
   }
 
   // Fill character sheet tool
-  if (toolName === "fill_character-sheet-basic") {
+  if (toolName === "fill_character_sheet") {
     const fileName = requireInput(input, "fileName");
-    const characterName = typeof input.characterName === "string" ? (input.characterName as string) : "";
-    const skillTraining1 = input.skillTraining1 === true;
 
-    // Fetch the blank PDF as base64 (avoids Uint8Array constructor mismatch in edge runtime)
-    const pdfBase64 = await fetchBinaryAsBase64(baseUrl, "assets/character-sheet-basic.pdf");
+    // Extract text field values
+    const str = (key: string): string => (typeof input[key] === "string" ? (input[key] as string) : "");
+    const characterName = str("characterName");
 
-    // Load and fill the PDF form
+    // Fetch the PDF with form fields (avoids Uint8Array constructor mismatch in edge runtime)
+    const pdfBase64 = await fetchBinaryAsBase64(baseUrl, "assets/character-sheet.pdf");
+
+    // Load and fill the existing PDF form fields
     const pdfDoc = await PDFDocument.load(pdfBase64);
     const form = pdfDoc.getForm();
-    const page = pdfDoc.getPages()[0];
 
-    // Create and fill the Character Name text field
-    const nameField = form.createTextField("Character Name");
-    nameField.setText(characterName);
-    nameField.addToPage(page, { x: 150, y: 726, width: 180, height: 16 });
-
-    // Create and fill the Skill Training 1 checkbox
-    const skillCheckbox = form.createCheckBox("Skill Training 1");
-    if (skillTraining1) {
-      skillCheckbox.check();
+    // Fill text fields (input key -> PDF field name)
+    const textFields: [string, string][] = [
+      ["characterName", "Character Name"],
+      ["race", "Race"],
+      ["class", "Class"],
+      ["level", "Level"],
+      ["experience", "Experience"],
+      ["playerName", "Player Name"],
+      ["skill", "Skill"],
+      ["agility", "Agility"],
+      ["intelligence", "Intelligence"],
+      ["willpower", "Willpower"],
+      ["strength", "Strength"],
+      ["tactics", "Tactics"],
+      ["aim", "Aim"],
+      ["initiative", "Initiative"],
+      ["flaw", "Flaw"],
+      ["background", "Background"],
+      ["age", "Age"],
+      ["weight", "Weight"],
+      ["height", "Height"],
+    ];
+    for (const [inputKey, pdfField] of textFields) {
+      const value = str(inputKey);
+      if (value) {
+        fillText(form, pdfField, value);
+      }
     }
-    skillCheckbox.addToPage(page, { x: 45, y: 400, width: 10, height: 10 });
+
+    // Fill movement field ("minorMovement / majorMovement")
+    const minorMov = str("minorMovement");
+    const majorMov = str("majorMovement");
+    if (minorMov || majorMov) {
+      fillText(form, "Movement", `${minorMov} / ${majorMov}`);
+    }
+
+    // Fill array-of-stats fields (join abbreviations with ", ")
+    const arrayFields: [string, string][] = [
+      ["twoStats", "2 stats"],
+      ["oneStats", "1 stats"],
+    ];
+    for (const [inputKey, pdfField] of arrayFields) {
+      const arr = Array.isArray(input[inputKey]) ? (input[inputKey] as string[]) : [];
+      if (arr.length > 0) {
+        fillText(form, pdfField, arr.join(", "));
+      }
+    }
+
+    // Fill training checkbox fields (each stat has up to 5 training checkboxes)
+    const trainingFields: [string, string][] = [
+      ["skillTraining", "Skill"],
+      ["agilityTraining", "Agility"],
+      ["aimTraining", "Aim"],
+      ["tacticsTraining", "Tactics"],
+      ["intelligenceTraining", "Intelligence"],
+      ["willpowerTraining", "Willpower"],
+      ["strengthTraining", "Strength"],
+      ["initiativeTraining", "Initiative"],
+    ];
+    for (const [inputKey, statName] of trainingFields) {
+      const count = typeof input[inputKey] === "number" ? (input[inputKey] as number) : 0;
+      fillTraining(form, statName, count);
+    }
+
+    // Flatten form to bake values into page content (removes interactive widget backgrounds)
+    form.flatten();
 
     // Save the filled PDF
     const filledPdfBytes = await pdfDoc.save();
@@ -322,7 +440,7 @@ async function handleToolCall(
       content: [
         {
           type: "text",
-          text: `Character sheet filled — Character Name: "${characterName}", Skill Training 1: ${skillTraining1}. File: ${fileName}.pdf`,
+          text: `Character sheet filled for "${characterName}". File: ${fileName}.pdf`,
         },
         {
           type: "resource",
