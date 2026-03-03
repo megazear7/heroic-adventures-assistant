@@ -1,5 +1,6 @@
 import type { Context } from "./lib/shared.ts";
 import { getQueue } from "./lib/shared.ts";
+import { PDFDocument } from "https://esm.sh/pdf-lib@1.17.1?bundle-deps";
 
 // --- Types ---
 
@@ -14,12 +15,14 @@ type JsonRpcId = string | number | null;
 
 type FileIndex = {
   knowledge_folders: string[];
+  downloadable_assets?: { name: string; path: string; mimeType: string; description: string }[];
 };
 
 // --- Constants ---
 
 const DEFAULT_INDEX: FileIndex = {
   knowledge_folders: [],
+  downloadable_assets: [],
 };
 
 const KNOWLEDGE_BASE_PATH = "assets/knowledge";
@@ -103,12 +106,36 @@ async function fetchText(baseUrl: string, relativePath: string): Promise<string>
   return response.text();
 }
 
+async function fetchBinary(baseUrl: string, relativePath: string): Promise<Uint8Array> {
+  const safePath = sanitizeRelativePath(relativePath);
+  const url = `${baseUrl}/${encodePath(safePath)}`;
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`Not found: ${safePath}`);
+  }
+  return new Uint8Array(await response.arrayBuffer());
+}
+
+function uint8ArrayToBase64(bytes: Uint8Array): string {
+  let binary = "";
+  for (let i = 0; i < bytes.length; i++) {
+    binary += String.fromCharCode(bytes[i]);
+  }
+  return btoa(binary);
+}
+
+async function fetchBinaryAsBase64(baseUrl: string, relativePath: string): Promise<string> {
+  const bytes = await fetchBinary(baseUrl, relativePath);
+  return uint8ArrayToBase64(bytes);
+}
+
 async function loadIndex(baseUrl: string): Promise<FileIndex> {
   try {
     const indexText = await fetchText(baseUrl, "static/file-index.json");
     const parsed = JSON.parse(indexText) as Partial<FileIndex>;
     return {
       knowledge_folders: Array.isArray(parsed.knowledge_folders) ? parsed.knowledge_folders : [],
+      downloadable_assets: Array.isArray(parsed.downloadable_assets) ? parsed.downloadable_assets : [],
     };
   } catch {
     return DEFAULT_INDEX;
@@ -117,7 +144,7 @@ async function loadIndex(baseUrl: string): Promise<FileIndex> {
 
 // --- Dynamic tool generation ---
 
-function buildToolDefinitions(folders: string[]): unknown[] {
+function buildToolDefinitions(folders: string[], index: FileIndex): unknown[] {
   const tools: unknown[] = [
     {
       name: "welcome",
@@ -125,6 +152,38 @@ function buildToolDefinitions(folders: string[]): unknown[] {
       inputSchema: { type: "object", properties: {} },
     },
   ];
+
+  for (const asset of index.downloadable_assets ?? []) {
+    tools.push({
+      name: `download_${asset.name.replace(/[^a-z0-9_-]/gi, "_")}`,
+      description: `Download the ${asset.description}. Returns the raw file as base64-encoded binary data that clients can save to disk.`,
+      inputSchema: { type: "object", properties: {} },
+    });
+  }
+
+  tools.push({
+    name: "fill_character-sheet-basic",
+    description:
+      "Fill in the Heroic Adventures basic character sheet PDF with the provided data and return the completed form",
+    inputSchema: {
+      type: "object",
+      properties: {
+        fileName: {
+          type: "string",
+          description: "The desired file name for the filled PDF (without the .pdf extension)",
+        },
+        characterName: {
+          type: "string",
+          description: "The character's name to fill in the Character Name field",
+        },
+        skillTraining1: {
+          type: "boolean",
+          description: "Whether the Skill Training 1 checkbox should be checked",
+        },
+      },
+      required: ["fileName", "characterName", "skillTraining1"],
+    },
+  });
 
   for (const folder of folders) {
     tools.push(
@@ -203,6 +262,78 @@ async function handleToolCall(
   // Handle welcome
   if (toolName === "welcome") {
     return { content: WELCOME_TEXT };
+  }
+
+  // Handle downloadable asset tools
+  for (const asset of index.downloadable_assets ?? []) {
+    const expectedName = `download_${asset.name.replace(/[^a-z0-9_-]/gi, "_")}`;
+    if (toolName === expectedName) {
+      const base64Data = await fetchBinaryAsBase64(baseUrl, asset.path);
+      return {
+        content: [
+          {
+            type: "text",
+            text: `${asset.description} — binary data attached as an embedded resource. Save the blob content to a file with the appropriate extension.`,
+          },
+          {
+            type: "resource",
+            resource: {
+              uri: `heroic://assets/${asset.name}`,
+              mimeType: asset.mimeType,
+              blob: base64Data,
+            },
+          },
+        ],
+      };
+    }
+  }
+
+  // Fill character sheet tool
+  if (toolName === "fill_character-sheet-basic") {
+    const fileName = requireInput(input, "fileName");
+    const characterName = typeof input.characterName === "string" ? (input.characterName as string) : "";
+    const skillTraining1 = input.skillTraining1 === true;
+
+    // Fetch the blank PDF as base64 (avoids Uint8Array constructor mismatch in edge runtime)
+    const pdfBase64 = await fetchBinaryAsBase64(baseUrl, "assets/character-sheet-basic.pdf");
+
+    // Load and fill the PDF form
+    const pdfDoc = await PDFDocument.load(pdfBase64);
+    const form = pdfDoc.getForm();
+    const page = pdfDoc.getPages()[0];
+
+    // Create and fill the Character Name text field
+    const nameField = form.createTextField("Character Name");
+    nameField.setText(characterName);
+    nameField.addToPage(page, { x: 150, y: 726, width: 180, height: 16 });
+
+    // Create and fill the Skill Training 1 checkbox
+    const skillCheckbox = form.createCheckBox("Skill Training 1");
+    if (skillTraining1) {
+      skillCheckbox.check();
+    }
+    skillCheckbox.addToPage(page, { x: 45, y: 400, width: 10, height: 10 });
+
+    // Save the filled PDF
+    const filledPdfBytes = await pdfDoc.save();
+    const filledBase64 = uint8ArrayToBase64(new Uint8Array(filledPdfBytes));
+
+    return {
+      content: [
+        {
+          type: "text",
+          text: `Character sheet filled — Character Name: "${characterName}", Skill Training 1: ${skillTraining1}. File: ${fileName}.pdf`,
+        },
+        {
+          type: "resource",
+          resource: {
+            uri: `heroic://assets/${encodeURIComponent(fileName)}.pdf`,
+            mimeType: "application/pdf",
+            blob: filledBase64,
+          },
+        },
+      ],
+    };
   }
 
   // Dynamic folder-based tool dispatch
@@ -284,7 +415,7 @@ export async function processJsonRpc(
   if (body.method === "tools/list") {
     const baseUrl = getBaseUrl(request, context);
     const index = await loadIndex(baseUrl);
-    const tools = buildToolDefinitions(index.knowledge_folders);
+    const tools = buildToolDefinitions(index.knowledge_folders, index);
     return jsonRpcResult(id, { tools });
   }
 
@@ -302,6 +433,10 @@ export async function processJsonRpc(
 
     try {
       const result = await handleToolCall(toolName, input, baseUrl, index);
+      // If the handler already returned a full MCP content array, pass through directly
+      if (result && typeof result === "object" && Array.isArray((result as Record<string, unknown>).content)) {
+        return jsonRpcResult(id, result);
+      }
       return jsonRpcResult(id, toolResult(JSON.stringify(result, null, 2)));
     } catch (error) {
       const message = error instanceof Error ? error.message : "Unknown error";

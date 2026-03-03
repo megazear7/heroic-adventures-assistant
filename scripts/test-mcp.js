@@ -76,7 +76,7 @@ async function run() {
     console.log(`   Found ${tools.length} tools: ${tools.map((t) => t.name).join(", ")}`);
 
     // Verify expected tools exist
-    const expectedTools = ["welcome", "chapters_info", "chapters_list", "chapters_get", "rules_info", "rules_list", "rules_get", "skills_info", "skills_list", "skills_get", "agents_info", "agents_list", "agents_get"];
+    const expectedTools = ["welcome", "download_character-sheet-basic-pdf", "chapters_info", "chapters_list", "chapters_get", "rules_info", "rules_list", "rules_get", "skills_info", "skills_list", "skills_get", "agents_info", "agents_list", "agents_get"];
     for (const name of expectedTools) {
       if (!tools.find((t) => t.name === name)) {
         throw new Error(`Expected tool "${name}" not found`);
@@ -132,9 +132,27 @@ async function run() {
     }
     console.log(`   Found ${agentsData.entries.length} agents`);
 
-    // 10. Test error handling - unknown tool
-    console.log("10. Testing error handling...");
-    const errorResult = await jsonRpcCall("tools/call", { name: "nonexistent_tool", arguments: {} }, 8);
+    // 10. Call download_character-sheet-basic
+    console.log("10. Calling download_character-sheet-basic-pdf...");
+    const sheetResult = await jsonRpcCall("tools/call", { name: "download_character-sheet-basic-pdf", arguments: {} }, 8);
+    const sheetContent = sheetResult.result?.content;
+    if (!Array.isArray(sheetContent) || sheetContent.length < 2) {
+      throw new Error("download_character-sheet-basic returned insufficient content");
+    }
+    if (sheetContent[0].type !== "text") {
+      throw new Error("Expected text content as first item");
+    }
+    if (sheetContent[1].type !== "resource" || typeof sheetContent[1].resource?.blob !== "string") {
+      throw new Error("Expected embedded resource with blob as second item");
+    }
+    if (sheetContent[1].resource.mimeType !== "application/pdf") {
+      throw new Error("Expected application/pdf mimeType");
+    }
+    console.log(`    Character sheet OK (blob: ${sheetContent[1].resource.blob.length} chars base64)`);
+
+    // 11. Test error handling - unknown tool
+    console.log("11. Testing error handling...");
+    const errorResult = await jsonRpcCall("tools/call", { name: "nonexistent_tool", arguments: {} }, 9);
     if (!errorResult.result?.isError) {
       throw new Error("Expected error for unknown tool");
     }

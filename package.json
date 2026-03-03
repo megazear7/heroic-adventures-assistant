@@ -15,6 +15,7 @@
   "devDependencies": {
     "concurrently": "^9.1.0",
     "http-server": "^14.1.1",
-    "netlify-cli": "^24.0.0"
+    "netlify-cli": "^24.0.0",
+    "pdf-lib": "^1.17.1"
   }
 }
