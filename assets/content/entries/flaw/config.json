@@ -1,0 +1,11 @@
+{
+  "contentType": "flaw",
+  "tools": [
+    {
+      "name": "content",
+      "fields": [
+        "content"
+      ]
+    }
+  ]
+}

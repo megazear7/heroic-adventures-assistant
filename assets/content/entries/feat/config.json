@@ -1,0 +1,11 @@
+{
+  "contentType": "feat",
+  "tools": [
+    {
+      "name": "content",
+      "fields": [
+        "content"
+      ]
+    }
+  ]
+}

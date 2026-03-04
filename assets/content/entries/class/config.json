@@ -1,0 +1,11 @@
+{
+  "contentType": "class",
+  "tools": [
+    {
+      "name": "content",
+      "fields": [
+        "content"
+      ]
+    }
+  ]
+}

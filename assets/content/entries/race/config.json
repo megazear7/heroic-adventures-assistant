@@ -1,0 +1,11 @@
+{
+  "contentType": "race",
+  "tools": [
+    {
+      "name": "content",
+      "fields": [
+        "content"
+      ]
+    }
+  ]
+}

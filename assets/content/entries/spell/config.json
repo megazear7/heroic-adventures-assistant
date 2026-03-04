@@ -1,0 +1,11 @@
+{
+  "contentType": "spell",
+  "tools": [
+    {
+      "name": "content",
+      "fields": [
+        "content"
+      ]
+    }
+  ]
+}

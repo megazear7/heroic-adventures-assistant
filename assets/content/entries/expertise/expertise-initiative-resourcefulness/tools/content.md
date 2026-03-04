@@ -1,0 +1,5 @@
+# Resourcefulness
+
+**Category:** Initiative
+
+Resourcefulness enables characters to turn limited tools or surroundings into solutions on the fly. Whether it’s crafting a rope from vines to cross a chasm, using a shattered shield as a sled down an icy slope, or repurposing a glowing crystal to signal for help, this expertise thrives on ingenuity. It’s the mark of an adventurer who can seize opportunity from chaos, making it invaluable in a world where preparation often meets the unexpected.

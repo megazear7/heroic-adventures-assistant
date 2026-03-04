@@ -1,0 +1,11 @@
+{
+  "contentType": "shield",
+  "tools": [
+    {
+      "name": "content",
+      "fields": [
+        "content"
+      ]
+    }
+  ]
+}

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "node scripts/test-mcp.js",
-    "start": "netlify dev --no-open"
+    "start": "netlify dev --no-open",
+    "describe-images": "node scripts/describe-images.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,8 @@
     "pdf-lib": "^1.17.1"
   },
   "dependencies": {
+    "dotenv": "^16.6.1",
+    "openai": "^4.103.0",
     "static-mcpify": "^1.0.0"
   }
 }

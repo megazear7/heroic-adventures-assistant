@@ -1,0 +1,11 @@
+{
+  "contentType": "expertise",
+  "tools": [
+    {
+      "name": "content",
+      "fields": [
+        "content"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "contentType": "weapon",
+  "tools": [
+    {
+      "name": "content",
+      "fields": [
+        "content"
+      ]
+    }
+  ]
+}

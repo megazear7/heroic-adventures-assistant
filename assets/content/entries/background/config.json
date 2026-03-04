@@ -1,0 +1,11 @@
+{
+  "contentType": "background",
+  "tools": [
+    {
+      "name": "content",
+      "fields": [
+        "content"
+      ]
+    }
+  ]
+}
