@@ -23,16 +23,18 @@ Validate that the workspace is configured so rule-grounded Copilot workflows are
 
 ## Workflow
 
-1. Verify core rules assets exist and are readable.
-2. Verify `.github/copilot-instructions.md` is present and aligned with current workflow.
-3. Confirm skills directory includes chapter and rule skills plus task skills.
-4. Confirm prompt files are present for expected task types.
-5. Highlight missing or stale artifacts and propose minimal fixes.
-6. Provide a quick-start sequence for first practical use.
+1. Verify core content assets exist in `assets/content/entries/` (chapter, rule, skill, agent).
+2. Verify `assets/config.json` exists with `{ "source": null }`.
+3. Verify `.github/copilot-instructions.md` is present and aligned with current workflow.
+4. Confirm skills directory includes chapter and rule skills plus task skills.
+5. Confirm prompt files are present for expected task types.
+6. Verify the Netlify function exists at `netlify/functions/mcp.ts`.
+7. Highlight missing or stale artifacts and propose minimal fixes.
+8. Provide a quick-start sequence for first practical use.
 
 ## Quality Checks
 
-- Rule source files are present.
+- Content files are present in `assets/content/entries/` with proper `data.json` + `tools/content.md` structure.
 - Instructions file exists and references source-of-truth order.
 - Skill files and prompt files are discoverable.
 - User gets clear first prompts for common workflows.

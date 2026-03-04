@@ -1,15 +1,6 @@
-[[edge_functions]]
-  path = "/messages"
-  function = "messages"
-
-[[edge_functions]]
-  path = "/sse"
-  function = "sse"
-
-[[edge_functions]]
-  path = "/mcp"
-  function = "sse"
-
 [build]
-  publish = "."
-  command = ""
+  publish = "static"
+  command = "npm install"
+
+[functions]
+  node_bundler = "nft"

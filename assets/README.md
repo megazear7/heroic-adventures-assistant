@@ -2,9 +2,11 @@
 
 Canonical source files for the workspace live here.
 
-- `HA Players Handbook 2nd Edition.docx`: Original rulebook.
+- `config.json`: Root config for static-mcpify (`{ "source": null }`).
+- `content/`: MCP-served content in static-mcpify format.
+  - `entries/`: Content type folders (chapter, rule, skill, agent).
+  - `assets/`: Binary assets (PDFs).
 - `rules-full.md`: Full markdown conversion from the DOCX.
-- `rules-index.md`: Auto-generated heading index for quick lookups.
 - `images/media/`: Extracted embedded images from the rulebook.
 
 Copilot should prioritize these files when answering rules questions.

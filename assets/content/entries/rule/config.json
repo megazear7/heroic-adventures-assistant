@@ -1,0 +1,11 @@
+{
+  "contentType": "rule",
+  "tools": [
+    {
+      "name": "content",
+      "fields": [
+        "content"
+      ]
+    }
+  ]
+}

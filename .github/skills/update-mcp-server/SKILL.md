@@ -1,49 +1,62 @@
 ---
 name: update-mcp-server
-description: Guide for updating the Heroic Adventures MCP server edge functions.
+description: Guide for updating the Heroic Adventures MCP server Netlify function.
 ---
 
 # Update MCP Server
 
 ## Purpose
 
-Guide developers through modifying the Heroic Adventures MCP server, which runs as Netlify Edge Functions serving Heroic Adventures knowledge content via the MCP protocol.
+Guide developers through modifying the Heroic Adventures MCP server, which runs as a Netlify serverless function powered by [static-mcpify](https://github.com/megazear7/static-mcpify).
 
 ## Architecture Overview
 
-The MCP server consists of two edge functions:
+The MCP server is a single Netlify function:
 
-- `netlify/edge-functions/messages.ts` — Main JSON-RPC processor. Handles `initialize`, `tools/list`, and `tools/call` methods. Exports `processJsonRpc` and `handleSse`.
-- `netlify/edge-functions/sse.ts` — Handles both Streamable HTTP (POST) and legacy SSE (GET) transports.
-- `netlify/edge-functions/lib/shared.ts` — Shared types and utilities.
+- `netlify/functions/mcp.ts` — Uses `handleMcpRequest` from `static-mcpify/web-handler` to serve MCP requests. Points to `assets/content/` for content.
 
 ## How Tools Are Generated
 
-Tools are generated **dynamically** based on the `knowledge_folders` array in `static/file-index.json`. For each folder name listed (e.g., `chapters`, `rules`, `skills`, `agents`), three tools are registered:
+Tools are generated **automatically** by static-mcpify based on the content directory structure at `assets/content/entries/`. For each content type folder (e.g., `chapter`, `rule`, `skill`, `agent`), three tools are registered:
 
 | Tool Pattern | Description |
 |---|---|
-| `<folder>_info` | Returns the contents of `assets/knowledge/<folder>/info.md` |
-| `<folder>_list` | Lists all entries parsed from the info.md table |
-| `<folder>_get` | Returns content of `assets/knowledge/<folder>/entries/<entry-name>.md` |
+| `list_<type>` | List all entries of a content type, with optional filter |
+| `get_<type>` | Get entry metadata (data.json) by title slug |
+| `get_<type>_content` | Get entry markdown content (tools/content.md) by title slug |
 
-## Adding a New Knowledge Folder
+Additional tools for binary assets:
 
-1. Create the folder structure: `assets/knowledge/<name>/info.md` and `assets/knowledge/<name>/entries/`.
-2. Write an `info.md` with a markdown table listing entries (see existing folders for format).
-3. Add entry `.md` files to the `entries/` subfolder.
-4. Add the folder name to `knowledge_folders` in `static/file-index.json`.
-5. Run `npm test` to verify the new tools appear and work.
+| Tool | Description |
+|---|---|
+| `list_assets` | List all files in `content/assets/` |
+| `get_asset` | Get a specific asset by filename |
 
-## Modifying Existing Tools
+## Adding a New Content Type
 
-- Tool definitions are built in `buildToolDefinitions()` in `messages.ts`.
-- Tool dispatch is handled in `handleToolCall()` in `messages.ts`.
-- Entry listing parses the `info.md` markdown table in `listEntries()`.
+1. Create the type folder: `assets/content/entries/<new-type>/`
+2. Create `config.json`:
+   ```json
+   {
+     "contentType": "<new-type>",
+     "tools": [
+       { "name": "content", "fields": ["content"] }
+     ]
+   }
+   ```
+3. Add entry folders, each with `data.json` and `tools/content.md`.
+4. Run `npm test` to verify the new tools appear and work.
+
+## Modifying the Netlify Function
+
+- The function is at `netlify/functions/mcp.ts`.
+- It uses `handleMcpRequest(contentDir, req)` from `static-mcpify/web-handler`.
+- The `config` export sets the route path (`/mcp`) and `includedFiles` for bundling.
+- Changes to the function require server restart.
 
 ## Key Patterns
 
-- All content is fetched via HTTP from the deployed site (or localhost during dev).
-- Paths are sanitized to prevent directory traversal.
-- The `welcome` tool is always available and serves static text.
-- JSON-RPC 2.0 protocol with MCP version `2024-11-05`.
+- All content is read from the filesystem by static-mcpify.
+- No manual tool definitions or dispatch logic needed.
+- The `includedFiles` config ensures content files are bundled for deployment.
+- Content changes are picked up automatically; function changes require restart.

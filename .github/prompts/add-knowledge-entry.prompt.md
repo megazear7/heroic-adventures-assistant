@@ -1,15 +1,16 @@
 ---
 name: add-knowledge-entry
-description: Add a new entry to an existing knowledge folder.
-argument-hint: folder name and entry topic
+description: Add a new entry to an existing content type.
+argument-hint: content type and entry topic
 ---
 
 I want to add a new knowledge entry. Help me:
 
-1. Confirm which knowledge folder to add it to (chapters, rules, skills, or agents).
-2. Choose an appropriate kebab-case filename.
-3. Create the entry `.md` file in `assets/knowledge/<folder>/entries/`.
-4. Update the `assets/knowledge/<folder>/info.md` table with the new entry.
-5. Remind me to test with `npm start` and verify the entry appears in `<folder>_list` and `<folder>_get`.
+1. Confirm which content type to add it to (chapter, rule, skill, or agent).
+2. Choose an appropriate kebab-case folder name.
+3. Create the entry folder in `assets/content/entries/<type>/<entry-name>/`.
+4. Create `data.json` with entry metadata (contentType, title, description, slug).
+5. Create `tools/content.md` with the entry's markdown content.
+6. Remind me to test with `npm start` and verify the entry appears in `list_<type>` and `get_<type>_content`.
 
 Follow the conventions in the add-knowledge-content skill.

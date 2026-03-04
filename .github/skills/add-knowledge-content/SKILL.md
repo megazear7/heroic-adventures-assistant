@@ -1,77 +1,79 @@
 ---
 name: add-knowledge-content
-description: How to add new content to the assets/knowledge folder structure.
+description: How to add new content to the assets/content folder structure.
 ---
 
 # Add Knowledge Content
 
 ## Purpose
 
-Guide developers through adding new knowledge entries or entire knowledge folders to the Heroic Adventures MCP server.
+Guide developers through adding new knowledge entries or content types to the Heroic Adventures MCP server, which uses the [static-mcpify](https://github.com/megazear7/static-mcpify) content structure.
 
-## Knowledge Folder Structure
+## Content Structure (static-mcpify format)
 
 ```
-assets/knowledge/
-├── <folder-name>/
-│   ├── info.md          # Overview and entry table
-│   └── entries/
-│       ├── entry-one.md
-│       ├── entry-two.md
-│       └── ...
+assets/
+├── config.json                     # { "source": null }
+└── content/
+    ├── assets/                     # Binary assets (PDFs, images)
+    └── entries/
+        ├── <type>/                 # Content type (chapter, rule, skill, agent)
+        │   ├── config.json         # { "contentType": "<type>", "tools": [...] }
+        │   └── <entry-name>/
+        │       ├── data.json       # Entry metadata
+        │       └── tools/
+        │           └── content.md  # Entry content (markdown)
 ```
 
-Each folder under `assets/knowledge/` automatically gets three MCP tools:
-- `<folder-name>_info` — serves `info.md`
-- `<folder-name>_list` — parses entry names from `info.md` table
-- `<folder-name>_get` — serves a specific `entries/<name>.md` file
+Each content type folder under `assets/content/entries/` automatically gets these MCP tools:
+- `list_<type>` — List all entries of that content type
+- `get_<type>` — Get entry metadata (data.json) by title slug
+- `get_<type>_content` — Get entry markdown content by title slug
 
-## Adding an Entry to an Existing Folder
+## Adding an Entry to an Existing Content Type
 
-1. Create a new `.md` file in `assets/knowledge/<folder>/entries/`.
-   - Use kebab-case naming (e.g., `my-new-entry.md`).
-   - Do NOT use `SKILL.md`, `.agent.md`, or `.prompt.md` extensions.
-2. Update `assets/knowledge/<folder>/info.md` to add a row to the markdown table:
+1. Create the entry folder: `assets/content/entries/<type>/<entry-name>/`
+   - Use kebab-case naming (e.g., `my-new-entry`).
+2. Create `data.json` with entry metadata:
+   ```json
+   {
+     "contentType": "<type>",
+     "title": "Human Readable Title",
+     "description": "Brief description of the entry",
+     "slug": "my-new-entry"
+   }
    ```
-   | my-new-entry | Brief description of the entry |
+3. Create `tools/content.md` with the entry's markdown content.
+4. Test with `npm start` and verify with `list_<type>` and `get_<type>_content`.
+
+## Adding a New Content Type
+
+1. Create the type folder: `assets/content/entries/<new-type>/`
+2. Create `assets/content/entries/<new-type>/config.json`:
+   ```json
+   {
+     "contentType": "<new-type>",
+     "tools": [
+       { "name": "content", "fields": ["content"] }
+     ]
+   }
    ```
-3. Test with `npm start` and verify with `<folder>_list` and `<folder>_get`.
+3. Add entry folders with `data.json` and `tools/content.md` inside each.
+4. Run `npm test` to verify the new tools (`list_<new-type>`, `get_<new-type>`, `get_<new-type>_content`) appear.
 
-## Adding a New Knowledge Folder
+## Adding Binary Assets
 
-1. Create the folder: `assets/knowledge/<new-folder>/`
-2. Create `assets/knowledge/<new-folder>/info.md` with this template:
-
-   ```markdown
-   # Folder Title
-
-   Description of what this folder contains.
-
-   ## Usage
-
-   - Use `<new-folder>_list` to see all available entries.
-   - Use `<new-folder>_get` with an `entry-name` to retrieve a specific entry.
-
-   ## Available Entries
-
-   | Entry Name | Description |
-   |---|---|
-   | example-entry | Description of the entry |
-   ```
-
-3. Create `assets/knowledge/<new-folder>/entries/` and add `.md` files.
-4. Add the folder name to `knowledge_folders` in `static/file-index.json`.
-5. Run `npm test` to verify.
+1. Place the file in `assets/content/assets/` (e.g., `character-sheet.pdf`).
+2. The file becomes available via the `list_assets` and `get_asset` tools.
 
 ## Naming Conventions
 
-- Folder names: lowercase kebab-case (e.g., `chapters`, `rules`, `skills`)
-- Entry files: lowercase kebab-case with `.md` extension (e.g., `chapter-01-introduction.md`)
-- Never use `SKILL.md`, `.agent.md`, or `.prompt.agent.md` as file names
-- The `info.md` file is required in every knowledge folder
+- Content type folder names: lowercase singular kebab-case (e.g., `chapter`, `rule`, `skill`)
+- Entry folder names: lowercase kebab-case (e.g., `chapter-01-introduction`, `rule-initiative`)
+- Always include `data.json` and `tools/content.md` in every entry folder
 
 ## Important Notes
 
-- The `<folder>_list` tool parses entry names from the markdown table in `info.md`. Ensure entries follow the `| entry-name | description |` format.
-- Entry names in the table must match the filename (without `.md` extension).
+- Tools are auto-generated by static-mcpify from the content directory structure — no manual tool registration needed.
+- The `title` field in `data.json` is used as the entry identifier for `get_<type>` calls.
 - All content is served statically — no database or dynamic content generation.

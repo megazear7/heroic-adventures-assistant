@@ -1,0 +1,20 @@
+
+- Read up on static-mcpify
+    - The website: https://static-mcpify.alexlockhart.me/
+    - And it's GitHub repository: https://github.com/megazear7/static-mcpify
+- Refactor the content in this heroic-adventure-assistant repository to match the requirements of static-mcpify
+    - This will involve changing the structure of the content under the `assets` directory based on the static example: https://github.com/megazear7/static-mcpify/tree/main/examples/static
+    - You can read more about this in the readme of static-mcpify: https://github.com/megazear7/static-mcpify/blob/main/README.md#content-structure
+- Update the netlify functions `netlify/edge-functions` to use static-mcpify
+    - You will need to use `import { handleMcpRequest } from 'static-mcpify/web-handler';`
+    - You can see an example of this here: https://github.com/megazear7/static-mcpify/blob/main/netlify/functions/static-mcp.ts
+- Update the `index.html` file as needed and make sure everything works
+- You probably can remove `static/file-index.json` after these changes. I don't think it will be needed any more
+- Update the Netlify deployment so that only the files under the `static` directory are available on Netlify
+- This will involve moving `index.html` under the `static` directory.
+- Update `scripts/test-mcp.js` as needed to test the changes
+- Run the server, run the tests, connect to the localhost mcp, and make sure everything works.
+- Update the `.github/copilot-instructions.md` as needed to account for these changes
+- Update all of the skills under `.github/skills` as needed to account for these changes
+- Update all the prompts under `.github/prompts` as needed to account for these changes
+- Update the readme at `README.md` to account for these changes

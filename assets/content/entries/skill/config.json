@@ -1,0 +1,11 @@
+{
+  "contentType": "skill",
+  "tools": [
+    {
+      "name": "content",
+      "fields": [
+        "content"
+      ]
+    }
+  ]
+}

@@ -1,15 +1,15 @@
 # Heroic Adventures Assistant
 
-An MCP (Model Context Protocol) server that serves **Heroic Adventures 2nd Edition** rulebook content via dynamically generated tools. Deployed on Netlify as edge functions.
+An MCP (Model Context Protocol) server that serves **Heroic Adventures 2nd Edition** rulebook content via auto-generated tools. Powered by [static-mcpify](https://github.com/megazear7/static-mcpify) and deployed on Netlify.
 
-To connect to this MCP server, use the `https://mcp.heroicadventures.app/sse` url. See the `mcp.json` example below.
+To connect to this MCP server, use the `https://mcp.heroicadventures.app/mcp` url. See the `mcp.json` example below.
 
 ```json
 {
 	"servers": {
 		"heroic-adventures": {
-			"type": "sse",
-			"url": "https://mcp.heroicadventures.app/sse"
+			"type": "http",
+			"url": "https://mcp.heroicadventures.app/mcp"
 		}
 	}
 }
@@ -18,50 +18,53 @@ To connect to this MCP server, use the `https://mcp.heroicadventures.app/sse` ur
 ## Project Structure
 
 ```
-assets/knowledge/       — MCP-served knowledge content
-  chapters/             — Rulebook chapter text
-  rules/                — Thematic rule summaries
-  skills/               — Skills and prompt templates
-  agents/               — Agent persona definitions
-netlify/edge-functions/ — Netlify Edge Functions (MCP server)
-static/file-index.json  — Knowledge folder registry
-scripts/                — Test and debug utilities
-.github/skills/         — Developer workflow skills (NOT served via MCP)
-.github/prompts/        — Developer prompt templates (NOT served via MCP)
+assets/content/             — MCP-served content (static-mcpify format)
+  entries/
+    chapter/                — Rulebook chapter text
+    rule/                   — Thematic rule summaries
+    skill/                  — Skills and prompt templates
+    agent/                  — Agent persona definitions
+  assets/                   — Binary assets (PDFs)
+netlify/functions/mcp.ts    — Netlify serverless function (MCP server)
+static/                     — Website files (HTML, CSS, JS)
+scripts/                    — Test and debug utilities
+.github/skills/             — Developer workflow skills (NOT served via MCP)
+.github/prompts/            — Developer prompt templates (NOT served via MCP)
 ```
 
 ## Quick Start
 
 ```bash
 npm install        # Install dependencies
-npm start          # Run website + MCP server in parallel
+npm start          # Run website + MCP server locally
 npm test           # Run MCP smoke tests
 ```
 
-`npm start` runs two servers side by side:
+`npm start` runs `netlify dev` which serves both the static website and the MCP function:
 
-| Server | URL | Purpose |
+| Endpoint | URL | Purpose |
 |---|---|---|
-| Website | http://localhost:3000 | Landing page (`index.html`) |
-| MCP Server | http://localhost:8888/sse | MCP endpoint for AI clients |
-
-Open http://localhost:3000 in your browser to view the website. The MCP server at port 8888 is used by AI clients (Claude, Copilot, etc.).
+| Website | http://localhost:8888 | Landing page |
+| MCP Server | http://localhost:8888/mcp | MCP endpoint for AI clients |
 
 ## How It Works
 
-The server dynamically generates MCP tools based on the folders listed in `static/file-index.json`. Each knowledge folder (e.g., `chapters`, `rules`) automatically gets three tools:
+The server uses [static-mcpify](https://github.com/megazear7/static-mcpify) to auto-generate MCP tools from the content structure in `assets/content/`. Each content type (chapter, rule, skill, agent) gets these tools:
 
 | Tool | Description |
 |---|---|
-| `<folder>_info` | Returns the folder's `info.md` overview |
-| `<folder>_list` | Lists entries parsed from the `info.md` table |
-| `<folder>_get` | Returns a specific entry by name |
+| `list_<type>` | List all entries of a content type |
+| `get_<type>` | Get entry metadata (data.json) by title slug |
+| `get_<type>_content` | Get entry markdown content by title slug |
+
+Additional tools: `list_assets`, `get_asset` for binary files.
 
 ## Adding Content
 
-1. Add a `.md` file to `assets/knowledge/<folder>/entries/`.
-2. Update `assets/knowledge/<folder>/info.md` with a table row for the new entry.
-3. To add a new folder, also add it to `knowledge_folders` in `static/file-index.json`.
+1. Create an entry folder: `assets/content/entries/<type>/<entry-name>/`
+2. Add `data.json` with entry metadata (title, description, slug).
+3. Add `tools/content.md` with the entry's markdown content.
+4. To add a new content type, create a folder with a `config.json`.
 
 See the `add-knowledge-content` skill for detailed instructions.
 
@@ -72,7 +75,7 @@ See the `add-knowledge-content` skill for detailed instructions.
   "servers": {
     "heroic-adventures-assistant": {
       "type": "http",
-      "url": "http://localhost:8888/sse"
+      "url": "http://localhost:8888/mcp"
     }
   }
 }
@@ -81,20 +84,20 @@ See the `add-knowledge-content` skill for detailed instructions.
 ## Testing
 
 ```bash
-# SSE stream test
-curl -N http://localhost:8888/sse
+# Health check
+curl http://localhost:8888/mcp
 
 # List available tools
-curl -X POST http://localhost:8888/sse \
+curl -X POST http://localhost:8888/mcp \
   -H "Content-Type: application/json" \
   -d '{"jsonrpc":"2.0","id":1,"method":"tools/list","params":{}}'
 
-# Get a specific entry
-curl -X POST http://localhost:8888/sse \
+# Get a specific chapter
+curl -X POST http://localhost:8888/mcp \
   -H "Content-Type: application/json" \
-  -d '{"jsonrpc":"2.0","id":2,"method":"tools/call","params":{"name":"chapters_get","arguments":{"entry-name":"chapter-01-introduction"}}}'
+  -d '{"jsonrpc":"2.0","id":2,"method":"tools/call","params":{"name":"get_chapter_content","arguments":{"title":"chapter-01-introduction"}}}'
 ```
 
 ## Deployment
 
-Push to the `main` branch to deploy to Netlify. The site serves static files and edge functions automatically.
+Push to the `main` branch to deploy to Netlify. The site serves static files from `static/` and the MCP function from `netlify/functions/`.

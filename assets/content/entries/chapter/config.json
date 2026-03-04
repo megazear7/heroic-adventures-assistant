@@ -1,0 +1,11 @@
+{
+  "contentType": "chapter",
+  "tools": [
+    {
+      "name": "content",
+      "fields": [
+        "content"
+      ]
+    }
+  ]
+}

@@ -4,13 +4,14 @@ You are assisting with development of the **Heroic Adventures Assistant**, an MC
 
 ## Project overview
 
-This is a Netlify-deployed MCP (Model Context Protocol) server. It serves knowledge content (chapters, rules, skills, agents) from `assets/knowledge/` via dynamically generated tools.
+This is a Netlify-deployed MCP server powered by [static-mcpify](https://github.com/megazear7/static-mcpify). It serves knowledge content (chapters, rules, skills, agents) from `assets/content/` via auto-generated tools.
 
 ## Key directories
 
-- `assets/knowledge/` — MCP-served content organized into subfolders (chapters, rules, skills, agents). Each subfolder has an `info.md` and `entries/` directory.
-- `netlify/edge-functions/` — Netlify Edge Functions implementing the MCP server (`messages.ts`, `sse.ts`).
-- `static/file-index.json` — Registry of knowledge folders that drives dynamic tool generation.
+- `assets/content/` — MCP-served content in static-mcpify format. Contains `entries/` (chapter, rule, skill, agent) and `assets/` (binary files).
+- `assets/config.json` — Root config for static-mcpify (`{ "source": null }`).
+- `netlify/functions/` — Netlify serverless function implementing the MCP server (`mcp.ts`).
+- `static/` — Static website files (HTML, CSS, JS) served as the Netlify publish directory.
 - `.github/skills/` — Developer workflow skills (NOT served via MCP).
 - `.github/prompts/` — Developer prompt templates (NOT served via MCP).
 - `scripts/` — Test and debug utilities.
@@ -18,29 +19,45 @@ This is a Netlify-deployed MCP (Model Context Protocol) server. It serves knowle
 ## Development workflow
 
 1. `npm install` — Install dependencies.
-2. `npm start` — Run local dev server at `http://localhost:8888`.
+2. `npm start` — Run local dev server at `http://localhost:8888` (website + MCP).
 3. `npm test` — Run MCP smoke tests.
-4. Changes to `assets/knowledge/` are automatically served; changes to edge functions require server restart.
+4. Changes to `assets/content/` are automatically served; changes to the Netlify function require server restart.
 
 ## Response priorities
 
 1. Understand the codebase before making changes — read relevant files first.
 2. Follow existing code patterns and conventions.
-3. Keep knowledge content files as plain `.md` (never use `SKILL.md`, `.agent.md`, or `.prompt.md` naming in `assets/knowledge/`).
-4. Use kebab-case for all file and folder names.
-5. After making changes, verify with tests when possible.
+3. Use kebab-case for all file and folder names.
+4. After making changes, verify with tests when possible.
 
 ## When modifying the MCP server
 
-- Tools are generated dynamically from `static/file-index.json` — do not hardcode tool definitions.
-- Each knowledge folder gets three tools: `_info`, `_list`, and `_get`.
-- The `_list` tool parses entry names from the markdown table in `info.md`.
+- The MCP server uses `static-mcpify/web-handler` — the `handleMcpRequest` function.
+- Tools are auto-generated from the content structure in `assets/content/entries/`.
+- Each content type folder gets tools: `list_<type>`, `get_<type>`, `get_<type>_<tool>`.
+- The Netlify function is at `netlify/functions/mcp.ts`.
 - Test changes using `npm start` + `npm test`.
+
+## Content structure (static-mcpify format)
+
+```
+assets/
+├── config.json
+└── content/
+    ├── assets/           # Binary assets (PDFs, images)
+    └── entries/
+        ├── <type>/       # Content type (chapter, rule, skill, agent)
+        │   ├── config.json   # { "contentType": "<type>", "tools": [...] }
+        │   └── <entry>/
+        │       ├── data.json     # Entry metadata
+        │       └── tools/
+        │           └── content.md  # Entry content (markdown)
+```
 
 ## When adding content
 
-- Add entries to existing folders: create `.md` file in `entries/`, update `info.md` table.
-- Add new knowledge folders: create folder structure, add to `file-index.json`.
+- Add entries to existing types: create entry folder with `data.json` and `tools/content.md`.
+- Add new content types: create type folder with `config.json`, then add entries.
 - See the `add-knowledge-content` skill for detailed instructions.
 
 ## Safety and quality

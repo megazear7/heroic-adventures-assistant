@@ -16,10 +16,13 @@ async function fetchWithTimeout(url, options = {}, timeoutMs = 5000) {
 
 async function jsonRpcCall(method, params = {}, id = 1) {
   const response = await fetchWithTimeout(
-    `${BASE_URL}/sse`,
+    `${BASE_URL}/mcp`,
     {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json, text/event-stream",
+      },
       body: JSON.stringify({ jsonrpc: "2.0", id, method, params }),
     },
     10000,
@@ -32,18 +35,17 @@ async function jsonRpcCall(method, params = {}, id = 1) {
 
 async function run() {
   try {
-    // 1. Verify SSE endpoint is available
-    console.log("1. Checking SSE endpoint...");
-    const sseResponse = await fetchWithTimeout(
-      `${BASE_URL}/sse`,
-      { headers: { Accept: "text/event-stream" } },
-      5000,
-    );
-    if (!sseResponse.ok) {
-      throw new Error(`SSE connection failed: HTTP ${sseResponse.status}`);
+    // 1. Verify MCP endpoint is available (GET returns status)
+    console.log("1. Checking MCP endpoint...");
+    const healthResponse = await fetchWithTimeout(`${BASE_URL}/mcp`, {}, 5000);
+    if (!healthResponse.ok) {
+      throw new Error(`MCP health check failed: HTTP ${healthResponse.status}`);
     }
-    await sseResponse.body?.cancel();
-    console.log("   SSE endpoint OK");
+    const health = await healthResponse.json();
+    if (health.status !== "ok") {
+      throw new Error("MCP health check did not return ok status");
+    }
+    console.log("   MCP endpoint OK");
 
     // 2. Initialize
     console.log("2. Sending initialize...");
@@ -60,10 +62,13 @@ async function run() {
     // 3. Send initialized notification
     console.log("3. Sending initialized notification...");
     await fetchWithTimeout(
-      `${BASE_URL}/sse`,
+      `${BASE_URL}/mcp`,
       {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json, text/event-stream",
+        },
         body: JSON.stringify({ jsonrpc: "2.0", method: "notifications/initialized" }),
       },
       5000,
@@ -75,8 +80,14 @@ async function run() {
     const tools = toolsResult.result?.tools ?? [];
     console.log(`   Found ${tools.length} tools: ${tools.map((t) => t.name).join(", ")}`);
 
-    // Verify expected tools exist
-    const expectedTools = ["welcome", "download_character-sheet-basic-pdf", "chapters_info", "chapters_list", "chapters_get", "rules_info", "rules_list", "rules_get", "skills_info", "skills_list", "skills_get", "agents_info", "agents_list", "agents_get"];
+    // Verify expected tools exist (static-mcpify auto-generated tools)
+    const expectedTools = [
+      "list_chapter", "get_chapter", "get_chapter_content",
+      "list_rule", "get_rule", "get_rule_content",
+      "list_skill", "get_skill", "get_skill_content",
+      "list_agent", "get_agent", "get_agent_content",
+      "list_assets", "get_asset",
+    ];
     for (const name of expectedTools) {
       if (!tools.find((t) => t.name === name)) {
         throw new Error(`Expected tool "${name}" not found`);
@@ -84,76 +95,81 @@ async function run() {
     }
     console.log("   All expected tools present");
 
-    // 5. Call welcome tool
-    console.log("5. Calling welcome tool...");
-    const welcomeResult = await jsonRpcCall("tools/call", { name: "welcome", arguments: {} }, 3);
-    if (!welcomeResult.result?.content?.[0]?.text) {
-      throw new Error("welcome tool returned no content");
+    // 5. Call list_chapter
+    console.log("5. Calling list_chapter...");
+    const chaptersResult = await jsonRpcCall("tools/call", { name: "list_chapter", arguments: {} }, 3);
+    const chaptersText = chaptersResult.result?.content?.[0]?.text;
+    if (!chaptersText) {
+      throw new Error("list_chapter returned no content");
     }
-    console.log("   Welcome tool OK");
+    console.log(`   list_chapter OK (${chaptersText.length} chars)`);
 
-    // 6. Call chapters_list
-    console.log("6. Calling chapters_list...");
-    const chaptersResult = await jsonRpcCall("tools/call", { name: "chapters_list", arguments: {} }, 4);
-    const chaptersData = JSON.parse(chaptersResult.result.content[0].text);
-    if (!chaptersData.entries || chaptersData.entries.length === 0) {
-      throw new Error("chapters_list returned no entries");
-    }
-    console.log(`   Found ${chaptersData.entries.length} chapters`);
-
-    // 7. Call chapters_get
-    console.log("7. Calling chapters_get...");
+    // 6. Call get_chapter
+    console.log("6. Calling get_chapter...");
     const chapterResult = await jsonRpcCall(
       "tools/call",
-      { name: "chapters_get", arguments: { "entry-name": chaptersData.entries[0] } },
+      { name: "get_chapter", arguments: { title: "chapter-01-introduction" } },
+      4,
+    );
+    const chapterText = chapterResult.result?.content?.[0]?.text;
+    if (!chapterText) {
+      throw new Error("get_chapter returned no content");
+    }
+    console.log(`   get_chapter OK (${chapterText.length} chars)`);
+
+    // 7. Call get_chapter_content
+    console.log("7. Calling get_chapter_content...");
+    const chapterContentResult = await jsonRpcCall(
+      "tools/call",
+      { name: "get_chapter_content", arguments: { title: "chapter-01-introduction" } },
       5,
     );
-    const chapterData = JSON.parse(chapterResult.result.content[0].text);
-    if (!chapterData.content) {
-      throw new Error("chapters_get returned no content");
+    const chapterContent = chapterContentResult.result?.content?.[0]?.text;
+    if (!chapterContent) {
+      throw new Error("get_chapter_content returned no content");
     }
-    console.log(`   Got chapter: ${chapterData.entry} (${chapterData.content.length} chars)`);
+    console.log(`   get_chapter_content OK (${chapterContent.length} chars)`);
 
-    // 8. Call rules_list
-    console.log("8. Calling rules_list...");
-    const rulesResult = await jsonRpcCall("tools/call", { name: "rules_list", arguments: {} }, 6);
-    const rulesData = JSON.parse(rulesResult.result.content[0].text);
-    if (!rulesData.entries || rulesData.entries.length === 0) {
-      throw new Error("rules_list returned no entries");
+    // 8. Call list_rule
+    console.log("8. Calling list_rule...");
+    const rulesResult = await jsonRpcCall("tools/call", { name: "list_rule", arguments: {} }, 6);
+    const rulesText = rulesResult.result?.content?.[0]?.text;
+    if (!rulesText) {
+      throw new Error("list_rule returned no content");
     }
-    console.log(`   Found ${rulesData.entries.length} rules`);
+    console.log(`   list_rule OK`);
 
-    // 9. Call agents_list
-    console.log("9. Calling agents_list...");
-    const agentsResult = await jsonRpcCall("tools/call", { name: "agents_list", arguments: {} }, 7);
-    const agentsData = JSON.parse(agentsResult.result.content[0].text);
-    if (!agentsData.entries || agentsData.entries.length === 0) {
-      throw new Error("agents_list returned no entries");
+    // 9. Call list_agent
+    console.log("9. Calling list_agent...");
+    const agentsResult = await jsonRpcCall("tools/call", { name: "list_agent", arguments: {} }, 7);
+    const agentsText = agentsResult.result?.content?.[0]?.text;
+    if (!agentsText) {
+      throw new Error("list_agent returned no content");
     }
-    console.log(`   Found ${agentsData.entries.length} agents`);
+    console.log(`   list_agent OK`);
 
-    // 10. Call download_character-sheet-basic
-    console.log("10. Calling download_character-sheet-basic-pdf...");
-    const sheetResult = await jsonRpcCall("tools/call", { name: "download_character-sheet-basic-pdf", arguments: {} }, 8);
-    const sheetContent = sheetResult.result?.content;
-    if (!Array.isArray(sheetContent) || sheetContent.length < 2) {
-      throw new Error("download_character-sheet-basic returned insufficient content");
+    // 10. Call list_skill
+    console.log("10. Calling list_skill...");
+    const skillsResult = await jsonRpcCall("tools/call", { name: "list_skill", arguments: {} }, 8);
+    const skillsText = skillsResult.result?.content?.[0]?.text;
+    if (!skillsText) {
+      throw new Error("list_skill returned no content");
     }
-    if (sheetContent[0].type !== "text") {
-      throw new Error("Expected text content as first item");
-    }
-    if (sheetContent[1].type !== "resource" || typeof sheetContent[1].resource?.blob !== "string") {
-      throw new Error("Expected embedded resource with blob as second item");
-    }
-    if (sheetContent[1].resource.mimeType !== "application/pdf") {
-      throw new Error("Expected application/pdf mimeType");
-    }
-    console.log(`    Character sheet OK (blob: ${sheetContent[1].resource.blob.length} chars base64)`);
+    console.log(`   list_skill OK`);
 
-    // 11. Test error handling - unknown tool
-    console.log("11. Testing error handling...");
-    const errorResult = await jsonRpcCall("tools/call", { name: "nonexistent_tool", arguments: {} }, 9);
-    if (!errorResult.result?.isError) {
+    // 11. Call list_assets
+    console.log("11. Calling list_assets...");
+    const assetsResult = await jsonRpcCall("tools/call", { name: "list_assets", arguments: {} }, 9);
+    const assetsText = assetsResult.result?.content?.[0]?.text;
+    if (!assetsText) {
+      throw new Error("list_assets returned no content");
+    }
+    console.log(`   list_assets OK`);
+
+    // 12. Test error handling - unknown tool
+    console.log("12. Testing error handling...");
+    const errorResult = await jsonRpcCall("tools/call", { name: "nonexistent_tool", arguments: {} }, 10);
+    if (!errorResult.result?.isError && !errorResult.error) {
       throw new Error("Expected error for unknown tool");
     }
     console.log("    Error handling OK");

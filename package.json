@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node scripts/test-mcp.js",
-    "start": "concurrently -n web,mcp -c blue,green \"npm:serve:website\" \"npm:serve:mcp\"",
-    "serve:website": "http-server . -p 3000 -s",
-    "serve:mcp": "netlify dev --no-open"
+    "start": "netlify dev --no-open"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +15,8 @@
     "http-server": "^14.1.1",
     "netlify-cli": "^24.0.0",
     "pdf-lib": "^1.17.1"
+  },
+  "dependencies": {
+    "static-mcpify": "^1.0.0"
   }
 }

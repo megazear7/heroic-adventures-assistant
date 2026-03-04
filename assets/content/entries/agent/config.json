@@ -1,0 +1,11 @@
+{
+  "contentType": "agent",
+  "tools": [
+    {
+      "name": "content",
+      "fields": [
+        "content"
+      ]
+    }
+  ]
+}
