@@ -1,0 +1,79 @@
+{
+  "spaceId": "1xrzrik78qmb",
+  "environmentId": "master",
+  "contentTypeId": "ruleReference",
+  "fields": {
+    "title": {
+      "en-US": "Healing Hand"
+    },
+    "category": {
+      "en-US": "spell > divine"
+    },
+    "content": {
+      "en-US": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "heading-1",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Healing Hand",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Type:",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " minor",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Heal 1d12 damage to a touched target",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Enhance: Add 1d12 healing",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-# <img src="assets/images/media/image21.png" style="width:8.99722in;height:4.49861in" />Fighter
+# <img src="assets/warrior_charging_from_cave.png" style="width:8.99722in;height:4.49861in" />Fighter
 
 ## Character creation
 
@@ -42,7 +42,7 @@ After rolling damage you may choose to reroll any dice that rolled a 1. You cann
 
 After rolling damage you may choose to reroll any dice that rolled a 1 or a 2. The dice must be d6 or larger. You cannot reroll dice after rolling for exploding damage. Required aim.
 
-# <img src="assets/images/media/image22.png" style="width:9.05258in;height:4.52629in" />
+# <img src="assets/wizard_with_staff.png" style="width:9.05258in;height:4.52629in" />
 
 # Wizard
 
@@ -112,7 +112,7 @@ Acquire 1 mystic spell. You may spend 1 hour to make a roll on the mages guild t
 
 Acquire 1 mystic spell. You may modify the result of a mage’s guild roll up or down by 3. Requires **Scholar** and intelligence 5+.
 
-# <img src="assets/images/media/image23.png" style="width:9.01042in;height:4.50486in" />
+# <img src="assets/elf_rogue_medieval_street.png" style="width:9.01042in;height:4.50486in" />
 
 # Rogue
 
@@ -176,7 +176,7 @@ Gain +3 with advantage instead of +2
 
 Gain advantage with agility against melee attacks when neither you nor the attacker are adjacent to an ally
 
-# <img src="assets/images/media/image24.png" style="width:8.98571in;height:4.49286in" />
+# <img src="assets/rugged_warrior_warhammer.png" style="width:8.98571in;height:4.49286in" />
 
 # Cleric
 
@@ -224,7 +224,7 @@ When casting a spell apply all the healing as damage that ignores damage reducti
 
 When using Turn Undead, reroll the lowest damage dice. Requires Turn Undead.
 
-# <img src="assets/images/media/image25.png" style="width:8.99792in;height:4.49861in" />
+# <img src="assets/authoritative_mage_stone_portal.png" style="width:8.99792in;height:4.49861in" />
 
 # Priest
 
@@ -268,7 +268,7 @@ Add d6 to the healing of any spell you cast that already heals.
 
 Add 4 to the range of all spells. Any spell that has a range of adjacent instead has a range of 4.
 
-<img src="assets/images/media/image26.png" style="width:9in;height:4.5in" />
+<img src="assets/armored_figure_sunlit_city.png" style="width:9in;height:4.5in" />
 
 # Paladin
 
@@ -314,7 +314,7 @@ Acquire 2 divine spells and 2 mana. Requires **Holy Order**.
 
 Gain 3 mana. Requires Holy Training.
 
-# <img src="assets/images/media/image27.png" style="width:9.01429in;height:4.50714in" />Warlock
+# <img src="assets/warrior_mage_fireball.png" style="width:9.01429in;height:4.50714in" />Warlock
 
 ## Character creation
 
@@ -358,7 +358,7 @@ Increase your hex dice to 1d8. Requires Greater Hex and level 13+.
 
 Acquire 1 mystic spell.
 
-# <img src="assets/images/media/image28.png" style="width:9.00278in;height:4.50139in" />Barbarian
+# <img src="assets/orc_warrior_lunging.png" style="width:9.00278in;height:4.50139in" />Barbarian
 
 ## Character creation
 
@@ -396,7 +396,7 @@ You may wield a two-handed weapon with one hand and a shield or other weapon in 
 
 You may wield two two-handed weapons. On all heroic actions, attack with both weapons. Requires Great Strength and a strength of 8.
 
-# <img src="assets/images/media/image29.png" style="width:9.04286in;height:4.52143in" />Druid
+# <img src="assets/elf_casting_magic_spark.png" style="width:9.04286in;height:4.52143in" />Druid
 
 ## Character creation
 
@@ -438,7 +438,7 @@ Gain 2 agility when in woods or forests.
 
 Gain 4 health.
 
-# <img src="assets/images/media/image30.png" style="width:9.05714in;height:4.52857in" />Ranger
+# <img src="assets/hooded_archer_in_forest.png" style="width:9.05714in;height:4.52857in" />Ranger
 
 ## Character creation
 
@@ -488,9 +488,9 @@ Gain 1 hunting point when your animal companion attacks your prey. Requires Anim
 
 Your animal companion has stats equal to a soldier creature profile. It still activates on the initiative 1. Requires Animal Companion
 
-<img src="assets/images/media/image31.png" style="width:8.86667in;height:11.5264in" />
+<img src="assets/soldiers_approaching_fortress.png" style="width:8.86667in;height:11.5264in" />
 
-<img src="assets/images/media/image32.jpeg" style="width:8.78542in;height:11.42153in" />
+<img src="assets/mage_with_glowing_book.jpeg" style="width:8.78542in;height:11.42153in" />
 
 Spells
 

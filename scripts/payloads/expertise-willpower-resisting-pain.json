@@ -1,0 +1,67 @@
+{
+  "spaceId": "1xrzrik78qmb",
+  "environmentId": "master",
+  "contentTypeId": "ruleReference",
+  "fields": {
+    "title": {
+      "en-US": "Resisting Pain"
+    },
+    "category": {
+      "en-US": "expertise"
+    },
+    "content": {
+      "en-US": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "heading-1",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Resisting Pain",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Category:",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " Willpower",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Characters skilled in this expertise can endure physical or mental anguish without breaking. Whether facing a dragon\u2019s fiery breath, a torturer\u2019s tools, or a spell of torment, this skill keeps them steadfast in battle or captivity.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

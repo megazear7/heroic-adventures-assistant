@@ -1,0 +1,83 @@
+{
+  "spaceId": "1xrzrik78qmb",
+  "environmentId": "master",
+  "contentTypeId": "ruleReference",
+  "fields": {
+    "title": {
+      "en-US": "Weak Grip"
+    },
+    "category": {
+      "en-US": "flaw"
+    },
+    "content": {
+      "en-US": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "heading-1",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Weak Grip",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Roll:",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " 7 ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "Stat Effect:",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " -1 aim",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "This character\u2019s hands lack the strength to hold a bow taut or hurl a dagger with force, resulting in limp shots that barely reach the target. They\u2019ve dropped more throwing knives than they\u2019ve thrown, much to the amusement of onlookers. Even gripping a mug takes effort some days. Their aim suffers from their feeble grasp.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

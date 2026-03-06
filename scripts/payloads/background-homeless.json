@@ -1,0 +1,45 @@
+{
+  "spaceId": "1xrzrik78qmb",
+  "environmentId": "master",
+  "contentTypeId": "ruleReference",
+  "fields": {
+    "title": {
+      "en-US": "Homeless"
+    },
+    "category": {
+      "en-US": "background"
+    },
+    "content": {
+      "en-US": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "heading-1",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Homeless",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Scraping by on streets and alleys has made you quick to spot danger or a chance at a meal. You\u2019ve learned to react fast\u2014dodging guards, grabbing scraps, or fleeing trouble. Every day is a gamble, and your sharp instincts keep you alive. The city\u2019s pulse beats in your veins.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

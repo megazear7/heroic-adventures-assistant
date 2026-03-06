@@ -1,0 +1,321 @@
+{
+  "spaceId": "1xrzrik78qmb",
+  "environmentId": "master",
+  "contentTypeId": "ruleReference",
+  "fields": {
+    "title": {
+      "en-US": "Ranger"
+    },
+    "category": {
+      "en-US": "class"
+    },
+    "content": {
+      "en-US": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "heading-1",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Ranger",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-2",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Character creation",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "+5 health",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Each time you target a creature with an attack, that creature is now your prey, and you gain 1 hunting point, up to a maximum of 3. If you attack a different target before the original target is killed, then prior to making the attack, your hunting points are reduced to 0 and the new target is now your prey.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-2",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Advancement",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "+4 health",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-2",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Features",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-3",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Finish the Hunt: Heroic Action",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Make an initiative vs. initiative attack against your prey and add damage to the attack equal to the number of hunting points you have.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-3",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Ploy of the Ranger: Heroic Action",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Make an initiative vs. initiative attack against your prey and add to your attack roll equal to the number of hunting points you have.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-3",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Kill Shot: Feature",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "If you make an attack and kill your prey, make another attack against a new target.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-3",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Stalk the Prey: Feature",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Increase your maximum hunting points equal to your initiative.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-3",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Ranger Resolve: Heroic Action",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Gain temporary health equal to your initiative + your current hunting points.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-3",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Animal Companion: Feature",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Choose an animal companion: dog, wolf, mountain lion, panther, or an equivalent animal approved by your game master. Your pet has stats equal to a minion creature profile of your character level except that it always acts on initiative 1. If your pet ever dies, you may spend 1 week of dedicated in-game time acquiring a new pet of your choice from the below list. You and the game master can use this time to roleplay how you come about acquiring a new pet.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-3",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Claw and Arrow: Feature",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Your animal companion gains damage against your prey equal to your hunting points. Requires Animal Companion.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-3",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Ranger Bond: Feature",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Gain 1 hunting point when your animal companion attacks your prey. Requires Animal Companion.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-3",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Companions Fury: Feature",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Your animal companion has stats equal to a soldier creature profile. It still activates on the initiative 1. Requires Animal Companion",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

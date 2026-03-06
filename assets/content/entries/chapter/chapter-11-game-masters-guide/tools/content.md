@@ -181,4 +181,4 @@ After creating locations, come up with reasons for why the characters may want t
 
 Some ways to do this is to have an inn that they keep coming back to that has familiar names and faces. This inn might have gambling that the characters can participate in or a fight ring that the characters can compete at. There could also be a dungeon complex with multiple competing factions that is a recurring source of problems for the locals, or a recurring opportunity for treasure. Also, when introducing new threats and opportunities for the players to act on, consider involving past locations
 
-<img src="assets/images/media/image76.jpeg" style="width:8.8052in;height:11.58542in" />
+<img src="assets/warrior_versus_dragon.jpeg" style="width:8.8052in;height:11.58542in" />

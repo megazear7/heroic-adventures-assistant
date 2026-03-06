@@ -1,0 +1,67 @@
+{
+  "spaceId": "1xrzrik78qmb",
+  "environmentId": "master",
+  "contentTypeId": "ruleReference",
+  "fields": {
+    "title": {
+      "en-US": "Escape Artist"
+    },
+    "category": {
+      "en-US": "expertise"
+    },
+    "content": {
+      "en-US": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "heading-1",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Escape Artist",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Category:",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " Agility",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Escape Artist is the expertise of wriggling free from physical restraints\u2014such as ropes, chains, or magical bindings\u2014or squeezing through confined spaces like narrow crevices or barred windows. It relies on exceptional flexibility, precise body control, and quick thinking to contort and maneuver out of entrapment. In a world filled with dungeons, traps, and monstrous captors, this skill is essential for adventurers who find themselves bound, imprisoned, or cornered. Masters of Escape Artist can slip out of combat grapples, break free from captivity, or bypass seemingly impassable obstacles, transforming vulnerability into opportunity with agile cunning.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

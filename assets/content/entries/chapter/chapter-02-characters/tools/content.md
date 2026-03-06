@@ -201,7 +201,7 @@ After each session, the game master will reward you with experience points. Add 
 | 19  | 87,000  | Race advancement   |
 | 20  | 100,000 | Learning           |
 
-# <img src="assets/images/media/image6.png" style="width:8.73949in;height:4.36974in" />Feats
+# <img src="assets/traveler_in_wheat_field.png" style="width:8.73949in;height:4.36974in" />Feats
 
 Instead of taking race or class features, you may select a feature from the list of feats. These are features that any race or character class can pick from.
 
@@ -329,9 +329,9 @@ You may take a class feature from another class. Requires cross training, level 
 
 Use your willpower for attack and damage against demons. Requires Cleric, Priest, or Paladin.
 
-<img src="assets/images/media/image7.png" style="width:6.2915in;height:4.37041in" />
+<img src="assets/market_stall_food_exchange.png" style="width:6.2915in;height:4.37041in" />
 
-# <img src="assets/images/media/image8.png" style="width:8.80734in;height:4.40367in" />Expertise
+# <img src="assets/medieval_village_street.png" style="width:8.80734in;height:4.40367in" />Expertise
 
 ## Skill
 
@@ -605,7 +605,7 @@ Seduction is the subtle art of weaving charm and influence through words, glance
 
 Gardening is the patient craft of nurturing life from the soil, coaxing blooms and bounty from even the most stubborn earth. It demands keen eyes to spot the first signs of blight, steady hands to prune wayward branches, and a deep understanding of seasons, sunlight, and water’s quiet rhythms. Beyond mere sustenance, it’s a skill of creation—turning a patch of dirt into a haven of herbs for healing, vegetables for strength, or flowers to lift weary spirits. Yet, it’s not without toil; the gardener must wrestle with drought, pests, and frost, their success measured in the slow unfurling of leaves and the weight of a harvest earned through diligence. Those who tend the earth wield a quiet power, their hands shaping life where others see only dust.
 
-# <img src="assets/images/media/image9.png" style="width:9.24236in;height:4.62083in" />Flaws
+# <img src="assets/warriors_approaching_archway.png" style="width:9.24236in;height:4.62083in" />Flaws
 
 ##### Clumsy
 
@@ -767,7 +767,7 @@ This character yawns through dawn, dozes by noon, and nods off mid-conversation,
 
 This character fumbles with their belt or searches for a missing glove when it’s time to move, always a step behind. They’ve left their boots by the hearth or forgotten their satchel—again. Readiness is a concept they can’t grasp. Chaos catches them flat-footed every time.
 
-# <img src="assets/images/media/image10.png" style="width:8.79484in;height:4.39742in" />Backgrounds
+# <img src="assets/traveler_approaching_town.png" style="width:8.79484in;height:4.39742in" />Backgrounds
 
 ##### Veteran
 
@@ -933,9 +933,9 @@ Carrying words across towns and wilds, you’ve dodged obstacles and raced again
 
 Guarding walls or streets through dark hours has trained you to catch the slightest hint of trouble. You’ve sounded alarms and drawn steel at a moment’s notice, always ready. Vigilance keeps you one step ahead of danger, your reactions swift and sure. The night sharpens your edge.
 
-<img src="assets/images/media/image11.jpeg" style="width:8.95714in;height:11.64451in" />
+<img src="assets/elven_companions_mountain_path.jpeg" style="width:8.95714in;height:11.64451in" />
 
-<img src="assets/images/media/image12.png" style="width:3.07153in;height:2.67778in" />Races
+<img src="assets/dwarf_warrior_sketch.png" style="width:3.07153in;height:2.67778in" />Races
 
 In *Heroic Adventures*, every creature is a member of a certain race, such as human, elf, dwarf, goblin, demon, or ogre. Character races, or the races that you can play as a player, are limited to the ones listed in this chapter, and shown in character creation.
 
@@ -943,7 +943,7 @@ Each character race will have certain starting stat modifiers to the primary sta
 
 Depending upon the setting that you are playing in, which is determined by the game master, each race might have different allegiances, feelings, and grudges against other races. It is common for elves and dwarves to not get along, for example, but for halflings to get along with everyone.
 
-<img src="assets/images/media/image13.png" style="width:2.11736in;height:3.51319in" />In addition to your affecting your primary stats, your race will also give you a certain amount of health during character creation and each time you level up.
+<img src="assets/female_warrior_sketch.png" style="width:2.11736in;height:3.51319in" />In addition to your affecting your primary stats, your race will also give you a certain amount of health during character creation and each time you level up.
 
 Your race will also give you features that you can acquire as you level up. These features can give you heroic actions or adjust other aspects of your character.
 

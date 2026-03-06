@@ -1,4 +1,4 @@
-# <img src="assets/images/media/image33.png" style="width:9.05714in;height:4.52857in" />Mystic spells
+# <img src="assets/spectral_blue_flame.png" style="width:9.05714in;height:4.52857in" />Mystic spells
 
 ## Arcane shield (*minor*)
 
@@ -170,7 +170,7 @@ Enhance: Choose 1 card to place in the discard pile
 
 Enhance: Take 1 card from the initiative discard pile and put it back into the initiative deck in any order along with the cards you drew
 
-# <img src="assets/images/media/image34.png" style="width:9.04419in;height:4.52173in" />Rune spells
+# <img src="assets/ornate_tiles_stone_ground.png" style="width:9.04419in;height:4.52173in" />Rune spells
 
 Any rune spell that places a rune must follow these rules: No space can contain multiple runes. Runes are always destroyed at the end of an encounter unless stated otherwise. Any single roll can only be affected by one rune at a time. If a spell says to use or consume a rune, the rune goes away after that action.
 
@@ -280,7 +280,7 @@ Choose a space within 4 spaces to place the ward rune. Any time a friendly creat
 
 Enhance: Place 1 additional ward rune
 
-# <img src="assets/images/media/image35.png" style="width:8.99564in;height:4.49782in" />Nature spells
+# <img src="assets/hand_reaching_into_leaves.png" style="width:8.99564in;height:4.49782in" />Nature spells
 
 ## Animal Whisper (*minor*)
 
@@ -408,7 +408,7 @@ Enhance: Add 1d4 damage
 
 Enhance: Extend the effect to adjacent allies
 
-# <img src="assets/images/media/image36.png" style="width:9.06171in;height:4.53085in" />Divine Spells
+# <img src="assets/wizard_casting_energy_burst.png" style="width:9.06171in;height:4.53085in" />Divine Spells
 
 ## Aegis of Combat (*minor*)
 
@@ -518,7 +518,7 @@ Enhance: Add 1d6 healing
 
 Enhance: Extend by 4 spaces
 
-<img src="assets/images/media/image37.jpeg" style="width:8.75099in;height:11.37629in" />
+<img src="assets/barrel_backpack_sword_still_life.jpeg" style="width:8.75099in;height:11.37629in" />
 
 Equipment
 

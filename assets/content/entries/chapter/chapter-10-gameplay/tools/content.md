@@ -108,7 +108,7 @@ If you are making a ranged attack against a creature and miss, all creatures, in
 
 At the game master’s discretion, a character can gain cover from their environment against ranged attacks. When using cover, compare your unmodified agility roll to the cover value. If your unmodified agility roll is equal to or less than the cover value, then the attack misses. Some attacks will ignore certain types of cover. For example, a bush will not protect you from a hill giant swinging a tree trunk, but it might protect you from a club.
 
-<img src="assets/images/media/image71.png" style="width:2.89474in;height:2.10461in" />
+<img src="assets/isometric_game_board_well.png" style="width:2.89474in;height:2.10461in" />
 
 | Examples                                       | Cover |
 |------------------------------------------------|-------|
@@ -120,11 +120,11 @@ At the game master’s discretion, a character can gain cover from their environ
 
 If you are attacking a creature and an ally is on the exact opposite side of that creature, then you have advantage on your attack. To be flanking you must be exactly on the opposite side of the creature as an ally. This means corner to corner, or edge to edge. Here are examples of flanking:
 
-<img src="assets/images/media/image72.png" style="width:2.16347in;height:1.7394in" />
+<img src="assets/isometric_three_characters.png" style="width:2.16347in;height:1.7394in" />
 
 And here is an example where the heroes are not considered to be flanking:
 
-<img src="assets/images/media/image73.png" style="width:2.10989in;height:1.57015in" />
+<img src="assets/isometric_board_three_figures.png" style="width:2.10989in;height:1.57015in" />
 
 ## Movement
 
@@ -132,7 +132,7 @@ Movement is performed in a square grid with edge-to-edge movement and corner to 
 
 In the below example, the dwarf and the human are enemies of the goblin, who is at the top of the image. If the goblin wants to move between the two enemies, he draws an opportunity action. The same is true if one space is blocked by terrain, such as the corner of a wall, and the other space is blocked by an enemy.
 
-<img src="assets/images/media/image74.png" style="width:1.91615in;height:1.82447in" />
+<img src="assets/isometric_characters_tiled_floor.png" style="width:1.91615in;height:1.82447in" />
 
 ## Opportunity actions
 
@@ -224,4 +224,4 @@ A dying character cannot move or take actions by themselves. Healing potions, sp
 
 The main way to keep them alive is to take them to a healing house. A character with three selections of the healing skill may attempt to revive a dying character per the healing house rules, with a +1 bonus. A character with 4 selections of the healing skill gains +2 to the revive roll, and a character with 5 selections of the healing skill gains a +3 bonus. This revival check must be made in comfortable conditions such as a home or an inn and requires spending 100 coin on various supplies needed such as bandages and medical equipment.
 
-<img src="assets/images/media/image75.png" style="width:8.90909in;height:15.1875in" />
+<img src="assets/fortified_mountain_city.png" style="width:8.90909in;height:15.1875in" />

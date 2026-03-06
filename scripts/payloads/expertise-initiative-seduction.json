@@ -1,0 +1,67 @@
+{
+  "spaceId": "1xrzrik78qmb",
+  "environmentId": "master",
+  "contentTypeId": "ruleReference",
+  "fields": {
+    "title": {
+      "en-US": "Seduction"
+    },
+    "category": {
+      "en-US": "expertise"
+    },
+    "content": {
+      "en-US": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "heading-1",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Seduction",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Category:",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " Initiative",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Seduction is the subtle art of weaving charm and influence through words, glances, and gestures. It\u2019s the skill of turning a stranger\u2019s guard into trust with a well-timed compliment or coaxing a tightly held secret from a wary rival with a disarming smile. Mastery lies in reading the unspoken\u2014sensing desires, fears, and weaknesses\u2014and knowing just when to press or pull back. Yet, it\u2019s a perilous craft; a single misstep can unravel the illusion, sparking anger or betrayal where trust once bloomed. Those who wield seduction walk a fine line, their charisma a quiet blade, sharp and precise.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -6,4 +6,4 @@
 
 #### Large blade \| Two handed \| Melee \| 1d10 damage \| Range 1 \| +0 initiative
 
-<img src="assets/images/media/image55.png" style="width:4.14097in;height:4.33333in" />Bonus Action: Attack with advantage
+<img src="assets/sword_on_black_background.png" style="width:4.14097in;height:4.33333in" />Bonus Action: Attack with advantage

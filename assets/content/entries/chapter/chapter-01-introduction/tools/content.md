@@ -24,6 +24,6 @@ A campaign is a series of sessions, maybe played on a weekly or monthly basis on
 
 When a character dies, usually during a tough encounter, the player creates a new character. Most likely, however, the player will have a protégé, which is a lower-level character that they have ready and lined up to play. A player may create a protégé when their main character reaches third level. Any time their main character levels up, their protégé levels up. In this way they always have a new character to play that is close enough in level to the rest of the group that they will not be severely disadvantaged. Also, their new character can continue the story where their main character left off.
 
-<img src="assets/images/media/image5.jpeg" style="width:8.94107in;height:11.62339in" />
+<img src="assets/adventuring_party_planning.jpeg" style="width:8.94107in;height:11.62339in" />
 
 Characters

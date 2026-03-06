@@ -1,4 +1,4 @@
-# <img src="assets/images/media/image14.png" style="width:9.1in;height:4.55in" />Human
+# <img src="assets/two_protagonists_stone_street.png" style="width:9.1in;height:4.55in" />Human
 
 ## Character creation
 
@@ -58,7 +58,7 @@ The humans of Heroic Adventures are explorers, builders, and warriors. Some expa
 
 In all of their endeavors, humans tend to come into conflict with others. More than this, there are much more terrifying forces at work than the mere misaligned goals of the civilized. Orcs might always be amassing over the next mountain range or beyond the next forest. Goblins are ever on the move and harassing the edges of civilization. More than this, forces of darkness are always seeking to corrupt, gain power, and unleash destruction at the most opportune time.
 
-# <img src="assets/images/media/image15.png" style="width:9.00926in;height:4.50427in" />Elf
+# <img src="assets/elven_duo_back_to_back.png" style="width:9.00926in;height:4.50427in" />Elf
 
 ## Character creation
 
@@ -136,7 +136,7 @@ The Elves of Heroic Adventurers have a rich, often tragic history. Long ago, the
 
 Others, descended from the Betrayers or in conflict with Elven Lords, left their lands. These Wood Elves became nomadic forest spirits, mastering wilderness skills. Over time, some wanderers formed small communities, becoming Grey Elves — neither noble nor wild, but akin to humans, who prize their magic and ancient wisdom. Grey Elves have even surpassed the magical prowess of their High Elven kin. In some regions, they’ve intermarried with humans and becoming half elves, forging bonds that bring either peace or strife, depending on the locale.
 
-# <img src="assets/images/media/image16.png" style="width:9.04286in;height:4.52143in" />Dwarf
+# <img src="assets/veteran_warrior_warhammer.png" style="width:9.04286in;height:4.52143in" />Dwarf
 
 ## Character creation
 
@@ -206,7 +206,7 @@ The Dwarves of Heroic Adventures are diverse, encompassing warriors and conquero
 
 Dwarves are robust and stalwart; once their mind is determined, it is difficult to dissuade them from their chosen course of action. They are also resistant to magic, a skill cultivated in days of yore after protracted conflicts with elves. In those ancient times, they forged counter-magic based on runes and symbols, a lore any dwarf can acquire with assiduous training.
 
-# <img src="assets/images/media/image17.png" style="width:9.14187in;height:4.57093in" />Halfling
+# <img src="assets/young_adventurers_forest.png" style="width:9.14187in;height:4.57093in" />Halfling
 
 ## Character creation
 
@@ -282,7 +282,7 @@ Other halflings develop a deep connection to the land that they dwell in, allowi
 
 As they increase their connection to the powers of nature, they can become more withdrawn from society. These halflings become an important source of knowledge for anyone seeking to understand the land and its animal inhabitants. However, this knowledge is not given easily and often must be earned by caring for and protecting the land, including the animals and people that dwell on it.
 
-# <img src="assets/images/media/image18.png" style="width:9.02837in;height:4.51419in" />Gnome
+# <img src="assets/dwarf_adventurer_snowy_pass.png" style="width:9.02837in;height:4.51419in" />Gnome
 
 ## Character creation
 
@@ -346,7 +346,7 @@ The gnomes of Heroic Adventures have lived side by side with the dwarves for tim
 
 Gnomes can be furious in combat. While not as strong as a dwarf they well exceed the strength of halflings, who in appearance they are most similar to. Gnomes, as often as dwarves or humans, can engage in warfare. However, like everything else, gnomes are almost never found acting alone but almost always following the leadership of dwarves.
 
-# <img src="assets/images/media/image19.png" style="width:9.1875in;height:4.59375in" />
+# <img src="assets/hooded_elf_archer_rogue.png" style="width:9.1875in;height:4.59375in" />
 
 # Half Orc
 
@@ -406,7 +406,7 @@ Intelligence attacks made against a creature that you already attacked this enco
 
 In Heroic Adventures, war with orcs is as old a story as there is. Orcs can be found beyond the border of every civilized land. In these border areas, half orcs are common. While their origins are up for debate, they are now an established part of human society. They enjoy manual labor, are naturally skilled in warfare, and almost always have a dour attitude. While not being numerous enough or having the necessary instincts for political organization, they instead are mostly recruited by humans and dwarves.
 
-<img src="assets/images/media/image20.jpeg" style="width:8.95714in;height:11.64377in" />
+<img src="assets/three_adventurers_canyon.jpeg" style="width:8.95714in;height:11.64377in" />
 
 Classes
 

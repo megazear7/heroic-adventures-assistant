@@ -22,4 +22,4 @@ Once the game master has chosen which attribute or action check should be used a
 
 On your character sheet, circle in the bubbles next to the actions that you have expertise in. You can only circle in a bubble with a number equal to or lower than your level. You gain expertise when you increase in level.
 
-<img src="assets/images/media/image70.jpeg" style="width:8.8164in;height:11.46059in" />
+<img src="assets/commander_studying_map.jpeg" style="width:8.8164in;height:11.46059in" />

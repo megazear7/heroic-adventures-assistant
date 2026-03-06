@@ -1,0 +1,67 @@
+{
+  "spaceId": "1xrzrik78qmb",
+  "environmentId": "master",
+  "contentTypeId": "ruleReference",
+  "fields": {
+    "title": {
+      "en-US": "Gardening"
+    },
+    "category": {
+      "en-US": "expertise"
+    },
+    "content": {
+      "en-US": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "heading-1",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Gardening",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Category:",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " Initiative",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Gardening is the patient craft of nurturing life from the soil, coaxing blooms and bounty from even the most stubborn earth. It demands keen eyes to spot the first signs of blight, steady hands to prune wayward branches, and a deep understanding of seasons, sunlight, and water\u2019s quiet rhythms. Beyond mere sustenance, it\u2019s a skill of creation\u2014turning a patch of dirt into a haven of herbs for healing, vegetables for strength, or flowers to lift weary spirits. Yet, it\u2019s not without toil; the gardener must wrestle with drought, pests, and frost, their success measured in the slow unfurling of leaves and the weight of a harvest earned through diligence. Those who tend the earth wield a quiet power, their hands shaping life where others see only dust.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

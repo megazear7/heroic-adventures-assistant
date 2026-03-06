@@ -282,11 +282,11 @@ Leader: 3
 
 Behemoth: 5
 
-<img src="assets/images/media/image77.png" style="width:6.50972in;height:2.15069in" />
+<img src="assets/action_check_table.png" style="width:6.50972in;height:2.15069in" />
 
-<img src="assets/images/media/image78.png" style="width:8.7013in;height:11.31169in" />
+<img src="assets/traveler_approaching_castle.png" style="width:8.7013in;height:11.31169in" />
 
-# <img src="assets/images/media/image79.png" style="width:9.03896in;height:4.51948in" />Monsters Level 1-2
+# <img src="assets/goblin_orc_warriors_plain.png" style="width:9.03896in;height:4.51948in" />Monsters Level 1-2
 
 At the lowest levels, adventurers face weak but numerous foes such as goblins and kobolds, who rely on ambush tactics and traps to overwhelm their prey. Wolves and giant rats provide direct physical threats, lunging with snapping jaws or swarming in filthy packs, while skeletons offer a taste of the undead horrors to come, shambling forth with eerie resilience despite their brittle bones.
 
@@ -449,7 +449,7 @@ Health (30)
 
 *Towering brutes swinging tree-trunk clubs, smashing anything in reach.*
 
-# <img src="assets/images/media/image80.png" style="width:8.77322in;height:4.38661in" />Monsters Level 3-4
+# <img src="assets/skeleton_warriors_emerging.png" style="width:8.77322in;height:4.38661in" />Monsters Level 3-4
 
 As adventurers grow stronger, they encounter more organized and dangerous foes like orcs and hobgoblins, who often employ crude tactics and wield better equipment than their weaker kin. Goblin wolf riders add mobility to the threat, charging into battle atop snarling beasts, while ghouls introduce paralyzing undead horrors, their clawing hands and hunger for flesh making them a sinister menace.
 
@@ -572,7 +572,7 @@ Health (30)
 
 *Towering brutes swinging tree-trunk clubs, smashing anything in reach.*
 
-# <img src="assets/images/media/image81.png" style="width:9.01299in;height:4.50649in" />Monsters Level 5-6
+# <img src="assets/two_orc_ogres_narrow_pass.png" style="width:9.01299in;height:4.50649in" />Monsters Level 5-6
 
 At this stage, adventurers must contend with powerful brutes like ogres, whose sheer strength can crush the unwary with a single blow, and undead such as mummies and wights, which bring curses and life-draining attacks to sap the vitality of their foes. Harpies add an aerial threat, swooping down with enchanting songs to lure victims into danger before raking them with sharp talons.
 
@@ -679,7 +679,7 @@ Fly, Strike
 
 *A juvenile griffin, still growing into its full strength, but already a formidable predator with sharp beak and claws.*
 
-# <img src="assets/images/media/image82.png" style="width:8.98701in;height:4.49351in" />Monsters Level 7-8
+# <img src="assets/menacing_wolf_pack_canyon.png" style="width:8.98701in;height:4.49351in" />Monsters Level 7-8
 
 Adventurers at this level face formidable opponents such as heavily armored knights, skilled in combat and clad in steel, alongside packs of dire wolves, massive beasts with bone-crunching jaws. Hell hounds bring fiery breath to the battlefield, their scorching exhalations searing flesh, while owlbears combine the ferocity of bears and the predatory instincts of owls in a terrifying hybrid form.
 
@@ -782,7 +782,7 @@ Toughness (8)
 
 *A hulking troll that clambers through trees and smashes with slimy fists.*
 
-# <img src="assets/images/media/image83.png" style="width:8.96104in;height:4.48052in" />Monsters Level 9-10
+# <img src="assets/giant_serpent_cave_battle.png" style="width:8.96104in;height:4.48052in" />Monsters Level 9-10
 
 At this level, adventurers encounter fearsome creatures like minotaur’s, whose brute strength and maze-dwelling habits make them deadly in close quarters. Lesser demons bring chaotic evil and supernatural abilities to the fight, their otherworldly presence unnerving, while medusas can petrify with a single gaze.
 
@@ -879,7 +879,7 @@ Heroic (2), Health (70)
 
 *A colossal being of immense strength, hurling boulders and stomping foes beneath its feet.*
 
-# <img src="assets/images/media/image84.png" style="width:8.90909in;height:4.45455in" />Monsters Level 11-12
+# <img src="assets/goblin_troll_forest.png" style="width:8.90909in;height:4.45455in" />Monsters Level 11-12
 
 Adventurers must now face regenerating trolls, whose wounds heal rapidly unless burned or otherwise countered, and dragon wyrmlings, young but fierce with deadly breath weapons. Elementals bring the raw power of the planes—be it fire, earth, air, or water—shifting the battlefield with their primal might, while medusas turn careless foes to stone with their baleful stares.
 
@@ -958,7 +958,7 @@ Polearm
 
 *A devil that wields chains with deadly precision, striking from afar and delivering devastating blows that shred armor and flesh.*
 
-# <img src="assets/images/media/image85.png" style="width:8.98701in;height:4.49351in" />Monsters Level 13-14
+# <img src="assets/giant_spider_cave_encounter.png" style="width:8.98701in;height:4.49351in" />Monsters Level 13-14
 
 Adventurers face deadly flying predators like wyverns and chimera, the former wielding poisonous stings and the latter boasting multiple heads—lion, goat, and dragon—each attacking in unison. Sphinxes guard ancient secrets with their riddles and magical abilities, testing both mind and might, while drakes, lesser kin to dragons, bring their own fiery threats to the fray.
 
@@ -1057,7 +1057,7 @@ Diviner (8)
 
 *A centaur shaman that harnesses the power of nature and peers into the future to aid its allies. Fragile but mystical, this shaman casts spells and foresees events to support its tribe in battle.*
 
-# <img src="assets/images/media/image86.png" style="width:9.03896in;height:4.51948in" />Monsters Level 15-16
+# <img src="assets/dinosaur_in_forest.png" style="width:9.03896in;height:4.51948in" />Monsters Level 15-16
 
 Adventurers at this stage must contend with powerful entities such as greater demons, who wield dark magic and physical might with malevolent intent, and tree ents, ancient guardians of the forest whose tremendous strength can uproot entire groves. Werewolves bring the curse of lycanthropy and enhanced physical prowess, their howls chilling the night, while vine horrors ensnare and devour the unwary with writhing, thorny tendrils.
 
@@ -1130,7 +1130,7 @@ Mage (8), Ranged (3d8)
 
 A fragile elven apprentice hurls bolts of arcane energy from a safe distance, supporting stronger allies.
 
-# <img src="assets/images/media/image87.png" style="width:8.93506in;height:4.46753in" />Monsters Level 17-18
+# <img src="assets/giant_versus_warrior_valley.png" style="width:8.93506in;height:4.46753in" />Monsters Level 17-18
 
 At this high level, adventurers face massive foes like hill giants, whose sheer size and strength can devastate landscapes, and young dragons, whose breath weapons and flight make them lethal predators. Necromancers command armies of undead, weaving dark spells to bolster their forces, while death knights, fallen warriors cursed with undeath, wield both martial skill and unholy power.
 
@@ -1213,7 +1213,7 @@ Command, Mage, Fly
 
 *A cunning orc chieftain soaring on a tamed wyvern, weaving spells and directing brutal assaults from the sky.*
 
-# <img src="assets/images/media/image88.png" style="width:8.83117in;height:4.41559in" />Monsters Level 19-20
+# <img src="assets/werewolf_snowy_village.png" style="width:8.83117in;height:4.41559in" />Monsters Level 19-20
 
 Adventurers at this pinnacle face otherworldly beings such as angels, who wield divine power with radiant might, and vampires, masters of the night whose charm and regeneration make them relentless. Ancient mummies command curses and undead minions, their dusty tombs hiding untold dangers, while iron golems stand as nearly indestructible constructs, their metal fists smashing through any defense.
 
@@ -1288,7 +1288,7 @@ Command, Fly, Diviner (6)
 
 *A radiant celestial being that soars above the battlefield, inspiring allies and foreseeing enemy moves.*
 
-# <img src="assets/images/media/image89.png" style="width:8.96104in;height:4.48052in" />Monsters Level 21-22
+# <img src="assets/horned_warrior_stormy_sky.png" style="width:8.96104in;height:4.48052in" />Monsters Level 21-22
 
 Adventurers encounter storm giants, whose command over storms and colossal strength can unleash devastating tempests across entire regions, and titans, ancient entities with godlike might that harkens back to a primordial era. Elder elementals embody the ultimate fury of fire, earth, air, or water, their presence alone capable of reshaping the world around them with elemental chaos. Colossal sea serpents rise from the ocean depths, their impenetrable scales and sheer size allowing them to crush ships and drag them into the abyss.
 
@@ -1351,7 +1351,7 @@ Ranged (3d12), Power Strike
 
 *A humanoid mass of pure lightning, predicting enemy moves and striking with precision bolts from afar.*
 
-# <img src="assets/images/media/image90.png" style="width:8.98701in;height:4.49351in" />Monsters Level 23-24
+# <img src="assets/demon_versus_heroes.png" style="width:8.98701in;height:4.49351in" />Monsters Level 23-24
 
 Heroes at this stage face vampire lords, whose mastery over darkness and hordes of undead servants make them nearly unkillable, regenerating wounds while enthralling even the strongest minds. Arch mages wield arcane power so vast they can twist reality itself, casting spells that defy the laws of nature, while liches, sustained by dark rituals, summon necromantic forces to overwhelm foes with armies of the dead. Pit fiends, supreme commanders of the infernal realms, blend overwhelming physical might with ruthless cunning, making them terrifying adversaries.
 
@@ -1406,7 +1406,7 @@ Command, Blast, Mounted
 
 *A horned general astride a flaming steed, barking orders to its minions while unleashing fiery bursts upon the battlefield.*
 
-# <img src="assets/images/media/image91.png" style="width:9.22078in;height:4.61039in" />Monsters Level 25-26
+# <img src="assets/dragon_overlooking_valley.png" style="width:9.22078in;height:4.61039in" />Monsters Level 25-26
 
 At this legendary tier, adventurers confront adult dragons, whose devastating breath weapons can reduce armies to ash and whose armored scales shrug off all but the mightiest blows. Demon lords radiate chaotic evil, their corrupting influence capable of warping entire planes, while celestial champions, divine warriors of unmatched power, wield holy might that can smite evil with a single strike. These foes test the limits of even the greatest heroes with their awe-inspiring presence and abilities.
 
@@ -1459,7 +1459,7 @@ Blast, Devastating Strike, Skeletal
 
 *A towering monstrosity of bone and shadow, it crushes entire groups with sweeping blows and shrugs off piercing strikes.*
 
-# <img src="assets/images/media/image92.png" style="width:9.06493in;height:4.53247in" />Monsters Level 27-28
+# <img src="assets/sea_serpent_attacking_shore.png" style="width:9.06493in;height:4.53247in" />Monsters Level 27-28
 
 Adventurers reaching this level face krakens, whose massive tentacles shatter fleets and whose control over the seas conjures storms of apocalyptic scale, and ancient sea serpents, so vast they can coil around islands and swallow sea monsters whole. Colossal octopi crush coastal strongholds with their titanic limbs, while whirlpool elementals unleash torrents of water that drag entire navies into inescapable vortexes. These oceanic terrors dominate the seas with unmatched ferocity.
 
@@ -1526,7 +1526,7 @@ Fly, Command,
 
 *A cunning, skeletal harpy-like creature that soars above the fray, directing its minions with eerie foresight and shrieking commands.*
 
-# <img src="assets/images/media/image93.png" style="width:9.01299in;height:4.50649in" />Monsters Level 29-30
+# <img src="assets/dragon_versus_army.png" style="width:9.01299in;height:4.50649in" />Monsters Level 29-30
 
 At the pinnacle of power, adventurers must battle ancient dragons, whose centuries of accumulated might make them living disasters, capable of annihilating kingdoms with a single roar, monstrous juggernauts whose regenerative hides and raw destructive force render them nearly invincible. Demon princes, sovereigns of the abyss, wield chaotic energies that can unravel reality itself, while archdevils, with their meticulous intellect and infernal legions, orchestrate schemes to dominate all existence. These ultimate foes represent the greatest challenges imaginable.
 
@@ -1577,9 +1577,9 @@ Ranged (3d12), Strike
 
 *A shadowy entity from the abyss, wielding eerie tendrils and prophetic curses to unravel its enemies’ fates.*
 
-<img src="assets/images/media/image94.png" style="width:8.97403in;height:11.61345in" />
+<img src="assets/printable_monster_entry_form.png" style="width:8.97403in;height:11.61345in" />
 
-<img src="assets/images/media/image95.png" style="width:9.14706in;height:11.83743in" /><img src="assets/images/media/image96.png" style="width:7.70657in;height:9.97328in" />
+<img src="assets/blank_page.png" style="width:9.14706in;height:11.83743in" /><img src="assets/printable_character_sheet.png" style="width:7.70657in;height:9.97328in" />
 
 Index
 

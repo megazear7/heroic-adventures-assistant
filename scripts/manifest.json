@@ -1,0 +1,2417 @@
+[
+  {
+    "dir": "agent",
+    "slug": "campaign-architect",
+    "title": "Campaign Architect",
+    "category": "agent",
+    "content_path": "assets/content/entries/agent/campaign-architect/tools/content.md"
+  },
+  {
+    "dir": "agent",
+    "slug": "character-builder",
+    "title": "Character Builder",
+    "category": "agent",
+    "content_path": "assets/content/entries/agent/character-builder/tools/content.md"
+  },
+  {
+    "dir": "agent",
+    "slug": "encounter-designer",
+    "title": "Encounter Designer",
+    "category": "agent",
+    "content_path": "assets/content/entries/agent/encounter-designer/tools/content.md"
+  },
+  {
+    "dir": "agent",
+    "slug": "heroic-gm",
+    "title": "Heroic GM",
+    "category": "agent",
+    "content_path": "assets/content/entries/agent/heroic-gm/tools/content.md"
+  },
+  {
+    "dir": "agent",
+    "slug": "rules-librarian",
+    "title": "Rules Librarian",
+    "category": "agent",
+    "content_path": "assets/content/entries/agent/rules-librarian/tools/content.md"
+  },
+  {
+    "dir": "armor",
+    "slug": "armor-chain-mail",
+    "title": "Chain Mail",
+    "category": "item > armor",
+    "content_path": "assets/content/entries/armor/armor-chain-mail/tools/content.md"
+  },
+  {
+    "dir": "armor",
+    "slug": "armor-full-plate",
+    "title": "Full Plate",
+    "category": "item > armor",
+    "content_path": "assets/content/entries/armor/armor-full-plate/tools/content.md"
+  },
+  {
+    "dir": "armor",
+    "slug": "armor-gambeson",
+    "title": "Gambeson",
+    "category": "item > armor",
+    "content_path": "assets/content/entries/armor/armor-gambeson/tools/content.md"
+  },
+  {
+    "dir": "armor",
+    "slug": "armor-half-plate",
+    "title": "Half plate",
+    "category": "item > armor",
+    "content_path": "assets/content/entries/armor/armor-half-plate/tools/content.md"
+  },
+  {
+    "dir": "armor",
+    "slug": "armor-scale-mail",
+    "title": "Scale Mail",
+    "category": "item > armor",
+    "content_path": "assets/content/entries/armor/armor-scale-mail/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-acrobat",
+    "title": "Acrobat",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-acrobat/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-alchemist",
+    "title": "Alchemist (Background)",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-alchemist/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-apprentice",
+    "title": "Apprentice",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-apprentice/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-archer",
+    "title": "Archer",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-archer/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-artisan",
+    "title": "Artisan",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-artisan/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-blacksmith",
+    "title": "Blacksmith",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-blacksmith/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-captive",
+    "title": "Captive",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-captive/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-chef",
+    "title": "Chef",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-chef/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-cultist",
+    "title": "Cultist",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-cultist/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-dancer",
+    "title": "Dancer",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-dancer/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-exile",
+    "title": "Exile",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-exile/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-farmer",
+    "title": "Farmer",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-farmer/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-fisherman",
+    "title": "Fisherman",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-fisherman/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-gladiator",
+    "title": "Gladiator",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-gladiator/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-guard",
+    "title": "Guard",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-guard/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-herbalist",
+    "title": "Herbalist",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-herbalist/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-hermit",
+    "title": "Hermit",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-hermit/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-homeless",
+    "title": "Homeless",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-homeless/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-hunter",
+    "title": "Hunter",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-hunter/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-innkeeper",
+    "title": "Innkeeper",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-innkeeper/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-juggler",
+    "title": "Juggler",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-juggler/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-laborer",
+    "title": "Laborer",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-laborer/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-librarian",
+    "title": "Librarian",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-librarian/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-lumberjack",
+    "title": "Lumberjack",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-lumberjack/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-mercenary",
+    "title": "Mercenary",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-mercenary/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-merchant",
+    "title": "Merchant",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-merchant/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-messenger",
+    "title": "Messenger",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-messenger/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-miner",
+    "title": "Miner",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-miner/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-monk",
+    "title": "Monk",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-monk/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-noble",
+    "title": "Noble",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-noble/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-refugee",
+    "title": "Refugee",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-refugee/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-sailor",
+    "title": "Sailor",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-sailor/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-scholar",
+    "title": "Scholar (Background)",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-scholar/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-scout",
+    "title": "Scout",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-scout/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-scribe",
+    "title": "Scribe",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-scribe/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-slave",
+    "title": "Slave",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-slave/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-slinger",
+    "title": "Slinger",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-slinger/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-strategist",
+    "title": "Strategist",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-strategist/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-thief",
+    "title": "Thief",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-thief/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-veteran",
+    "title": "Veteran",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-veteran/tools/content.md"
+  },
+  {
+    "dir": "background",
+    "slug": "background-watchman",
+    "title": "Watchman",
+    "category": "background",
+    "content_path": "assets/content/entries/background/background-watchman/tools/content.md"
+  },
+  {
+    "dir": "chapter",
+    "slug": "chapter-01-introduction",
+    "title": "Heroic Adventures",
+    "category": "chapter",
+    "content_path": "assets/content/entries/chapter/chapter-01-introduction/tools/content.md"
+  },
+  {
+    "dir": "chapter",
+    "slug": "chapter-02-characters",
+    "title": "Character creation",
+    "category": "chapter",
+    "content_path": "assets/content/entries/chapter/chapter-02-characters/tools/content.md"
+  },
+  {
+    "dir": "chapter",
+    "slug": "chapter-03-races",
+    "title": "Human (Chapter)",
+    "category": "chapter",
+    "content_path": "assets/content/entries/chapter/chapter-03-races/tools/content.md"
+  },
+  {
+    "dir": "chapter",
+    "slug": "chapter-04-classes",
+    "title": "Fighter (Chapter)",
+    "category": "chapter",
+    "content_path": "assets/content/entries/chapter/chapter-04-classes/tools/content.md"
+  },
+  {
+    "dir": "chapter",
+    "slug": "chapter-05-spells",
+    "title": "Mystic spells",
+    "category": "chapter",
+    "content_path": "assets/content/entries/chapter/chapter-05-spells/tools/content.md"
+  },
+  {
+    "dir": "chapter",
+    "slug": "chapter-06-equipment",
+    "title": "Armor",
+    "category": "chapter",
+    "content_path": "assets/content/entries/chapter/chapter-06-equipment/tools/content.md"
+  },
+  {
+    "dir": "chapter",
+    "slug": "chapter-07-proteges",
+    "title": "07 Proteges",
+    "category": "chapter",
+    "content_path": "assets/content/entries/chapter/chapter-07-proteges/tools/content.md"
+  },
+  {
+    "dir": "chapter",
+    "slug": "chapter-08-mass-combat",
+    "title": "08 Mass Combat",
+    "category": "chapter",
+    "content_path": "assets/content/entries/chapter/chapter-08-mass-combat/tools/content.md"
+  },
+  {
+    "dir": "chapter",
+    "slug": "chapter-09-action-checks",
+    "title": "09 Action Checks",
+    "category": "chapter",
+    "content_path": "assets/content/entries/chapter/chapter-09-action-checks/tools/content.md"
+  },
+  {
+    "dir": "chapter",
+    "slug": "chapter-10-gameplay",
+    "title": "Introduction",
+    "category": "chapter",
+    "content_path": "assets/content/entries/chapter/chapter-10-gameplay/tools/content.md"
+  },
+  {
+    "dir": "chapter",
+    "slug": "chapter-11-game-masters-guide",
+    "title": "11 Game Masters Guide",
+    "category": "chapter",
+    "content_path": "assets/content/entries/chapter/chapter-11-game-masters-guide/tools/content.md"
+  },
+  {
+    "dir": "chapter",
+    "slug": "chapter-12-monster-manual",
+    "title": "Mage Spells",
+    "category": "chapter",
+    "content_path": "assets/content/entries/chapter/chapter-12-monster-manual/tools/content.md"
+  },
+  {
+    "dir": "class",
+    "slug": "class-barbarian",
+    "title": "Barbarian",
+    "category": "class",
+    "content_path": "assets/content/entries/class/class-barbarian/tools/content.md"
+  },
+  {
+    "dir": "class",
+    "slug": "class-cleric",
+    "title": "Cleric",
+    "category": "class",
+    "content_path": "assets/content/entries/class/class-cleric/tools/content.md"
+  },
+  {
+    "dir": "class",
+    "slug": "class-druid",
+    "title": "Druid",
+    "category": "class",
+    "content_path": "assets/content/entries/class/class-druid/tools/content.md"
+  },
+  {
+    "dir": "class",
+    "slug": "class-fighter",
+    "title": "Fighter (Class)",
+    "category": "class",
+    "content_path": "assets/content/entries/class/class-fighter/tools/content.md"
+  },
+  {
+    "dir": "class",
+    "slug": "class-paladin",
+    "title": "Paladin",
+    "category": "class",
+    "content_path": "assets/content/entries/class/class-paladin/tools/content.md"
+  },
+  {
+    "dir": "class",
+    "slug": "class-priest",
+    "title": "Priest",
+    "category": "class",
+    "content_path": "assets/content/entries/class/class-priest/tools/content.md"
+  },
+  {
+    "dir": "class",
+    "slug": "class-ranger",
+    "title": "Ranger",
+    "category": "class",
+    "content_path": "assets/content/entries/class/class-ranger/tools/content.md"
+  },
+  {
+    "dir": "class",
+    "slug": "class-rogue",
+    "title": "Rogue",
+    "category": "class",
+    "content_path": "assets/content/entries/class/class-rogue/tools/content.md"
+  },
+  {
+    "dir": "class",
+    "slug": "class-warlock",
+    "title": "Warlock",
+    "category": "class",
+    "content_path": "assets/content/entries/class/class-warlock/tools/content.md"
+  },
+  {
+    "dir": "class",
+    "slug": "class-wizard",
+    "title": "Wizard",
+    "category": "class",
+    "content_path": "assets/content/entries/class/class-wizard/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-agility-balancing",
+    "title": "Balancing",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-agility-balancing/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-agility-climbing",
+    "title": "Climbing (Agility)",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-agility-climbing/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-agility-escape-artist",
+    "title": "Escape Artist",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-agility-escape-artist/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-agility-jumping",
+    "title": "Jumping (Agility)",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-agility-jumping/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-agility-running",
+    "title": "Running",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-agility-running/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-agility-sailing",
+    "title": "Sailing",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-agility-sailing/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-agility-stealth",
+    "title": "Stealth",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-agility-stealth/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-agility-swimming",
+    "title": "Swimming (Agility)",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-agility-swimming/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-aim-artillery-operation",
+    "title": "Artillery Operation",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-aim-artillery-operation/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-aim-artistry",
+    "title": "Artistry",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-aim-artistry/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-aim-calligraphy",
+    "title": "Calligraphy",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-aim-calligraphy/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-aim-construction",
+    "title": "Construction",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-aim-construction/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-aim-fletching",
+    "title": "Fletching",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-aim-fletching/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-aim-gem-cutting",
+    "title": "Gem Cutting",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-aim-gem-cutting/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-aim-navigation",
+    "title": "Navigation (Aim)",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-aim-navigation/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-aim-throwing",
+    "title": "Throwing",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-aim-throwing/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-initiative-awareness",
+    "title": "Awareness",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-initiative-awareness/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-initiative-blacksmithing",
+    "title": "Blacksmithing",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-initiative-blacksmithing/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-initiative-entrepreneurship",
+    "title": "Entrepreneurship",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-initiative-entrepreneurship/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-initiative-gardening",
+    "title": "Gardening",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-initiative-gardening/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-initiative-improvisation",
+    "title": "Improvisation",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-initiative-improvisation/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-initiative-navigation",
+    "title": "Navigation (Initiative)",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-initiative-navigation/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-initiative-resourcefulness",
+    "title": "Resourcefulness",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-initiative-resourcefulness/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-initiative-seduction",
+    "title": "Seduction",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-initiative-seduction/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-intelligence-deception",
+    "title": "Deception",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-intelligence-deception/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-intelligence-detecting-lies",
+    "title": "Detecting Lies",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-intelligence-detecting-lies/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-intelligence-finance",
+    "title": "Finance",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-intelligence-finance/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-intelligence-investigation",
+    "title": "Investigation",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-intelligence-investigation/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-intelligence-lore",
+    "title": "Lore",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-intelligence-lore/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-intelligence-perception",
+    "title": "Perception",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-intelligence-perception/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-intelligence-persuasion",
+    "title": "Persuasion",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-intelligence-persuasion/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-intelligence-symbology",
+    "title": "Symbology",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-intelligence-symbology/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-skill-crafting",
+    "title": "Crafting",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-skill-crafting/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-skill-fishing",
+    "title": "Fishing",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-skill-fishing/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-skill-healing",
+    "title": "Healing",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-skill-healing/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-skill-picking-locks",
+    "title": "Picking Locks",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-skill-picking-locks/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-skill-picking-pockets",
+    "title": "Picking Pockets",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-skill-picking-pockets/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-skill-setting-traps",
+    "title": "Setting Traps",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-skill-setting-traps/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-skill-sleight-of-hand",
+    "title": "Sleight of Hand",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-skill-sleight-of-hand/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-skill-tracking",
+    "title": "Tracking",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-skill-tracking/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-strength-brawling",
+    "title": "Brawling",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-strength-brawling/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-strength-climbing",
+    "title": "Climbing (Strength)",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-strength-climbing/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-strength-intimidation",
+    "title": "Intimidation",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-strength-intimidation/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-strength-jumping",
+    "title": "Jumping (Strength)",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-strength-jumping/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-strength-labor",
+    "title": "Labor",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-strength-labor/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-strength-masonry",
+    "title": "Masonry",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-strength-masonry/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-strength-swimming",
+    "title": "Swimming (Strength)",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-strength-swimming/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-strength-wrestling",
+    "title": "Wrestling",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-strength-wrestling/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-tactics-ambush",
+    "title": "Ambush",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-tactics-ambush/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-tactics-cartography",
+    "title": "Cartography",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-tactics-cartography/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-tactics-diplomacy",
+    "title": "Diplomacy",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-tactics-diplomacy/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-tactics-leadership",
+    "title": "Leadership",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-tactics-leadership/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-tactics-logistics",
+    "title": "Logistics",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-tactics-logistics/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-tactics-scouting",
+    "title": "Scouting",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-tactics-scouting/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-tactics-siegecraft",
+    "title": "Siegecraft",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-tactics-siegecraft/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-tactics-strategy",
+    "title": "Strategy",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-tactics-strategy/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-willpower-animal-handling",
+    "title": "Animal Handling",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-willpower-animal-handling/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-willpower-concentration",
+    "title": "Concentration",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-willpower-concentration/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-willpower-courage",
+    "title": "Courage",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-willpower-courage/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-willpower-endurance",
+    "title": "Endurance",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-willpower-endurance/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-willpower-following-tracks",
+    "title": "Following Tracks",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-willpower-following-tracks/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-willpower-resisting-pain",
+    "title": "Resisting Pain",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-willpower-resisting-pain/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-willpower-resisting-temptation",
+    "title": "Resisting Temptation",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-willpower-resisting-temptation/tools/content.md"
+  },
+  {
+    "dir": "expertise",
+    "slug": "expertise-willpower-survival",
+    "title": "Survival",
+    "category": "expertise",
+    "content_path": "assets/content/entries/expertise/expertise-willpower-survival/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-alchemist",
+    "title": "Alchemist (Feat)",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-alchemist/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-banishment",
+    "title": "Banishment",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-banishment/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-blessed",
+    "title": "Blessed",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-blessed/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-cavalier",
+    "title": "Cavalier",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-cavalier/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-close-range-fighting",
+    "title": "Close Range Fighting",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-close-range-fighting/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-cook",
+    "title": "Cook",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-cook/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-craftsmen",
+    "title": "Craftsmen",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-craftsmen/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-cross-training",
+    "title": "Cross Training",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-cross-training/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-darkvision",
+    "title": "Darkvision",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-darkvision/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-double-draft",
+    "title": "Double Draft",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-double-draft/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-dual-wielding",
+    "title": "Dual Wielding",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-dual-wielding/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-far-shot",
+    "title": "Far Shot",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-far-shot/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-footwork",
+    "title": "Footwork",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-footwork/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-hardy",
+    "title": "Hardy",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-hardy/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-learned",
+    "title": "Learned",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-learned/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-lycanthropy",
+    "title": "Lycanthropy",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-lycanthropy/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-multi-class",
+    "title": "Multi Class",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-multi-class/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-nimble",
+    "title": "Nimble",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-nimble/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-possessed",
+    "title": "Possessed",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-possessed/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-quick-draw",
+    "title": "Quick Draw",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-quick-draw/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-ranged-combat-specialist",
+    "title": "Ranged Combat Specialist",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-ranged-combat-specialist/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-scholar",
+    "title": "Scholar (Feat)",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-scholar/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-scroll-master",
+    "title": "Scroll Master",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-scroll-master/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-survivalist",
+    "title": "Survivalist",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-survivalist/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-swift",
+    "title": "Swift",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-swift/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-tough",
+    "title": "Tough",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-tough/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-unyielding",
+    "title": "Unyielding",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-unyielding/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-valor",
+    "title": "Valor",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-valor/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-vampirism",
+    "title": "Vampirism",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-vampirism/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-venom-resistance",
+    "title": "Venom Resistance",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-venom-resistance/tools/content.md"
+  },
+  {
+    "dir": "feat",
+    "slug": "feat-weapon-training",
+    "title": "Weapon Training",
+    "category": "feat",
+    "content_path": "assets/content/entries/feat/feat-weapon-training/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-absent-minded",
+    "title": "Absent Minded",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-absent-minded/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-addictive-personality",
+    "title": "Addictive Personality",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-addictive-personality/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-audacious",
+    "title": "Audacious",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-audacious/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-big-mouth",
+    "title": "Big Mouth",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-big-mouth/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-butterfingers",
+    "title": "Butterfingers",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-butterfingers/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-clumsy",
+    "title": "Clumsy",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-clumsy/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-distracted",
+    "title": "Distracted",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-distracted/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-doubtful",
+    "title": "Doubtful",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-doubtful/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-easily-distracted",
+    "title": "Easily Distracted",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-easily-distracted/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-eccentric",
+    "title": "Eccentric",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-eccentric/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-fearful",
+    "title": "Fearful",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-fearful/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-forgetful",
+    "title": "Forgetful",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-forgetful/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-frail",
+    "title": "Frail",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-frail/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-gluttonous",
+    "title": "Gluttonous",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-gluttonous/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-gullible",
+    "title": "Gullible",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-gullible/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-heavy-handed",
+    "title": "Heavy Handed",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-heavy-handed/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-hesitant",
+    "title": "Hesitant",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-hesitant/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-ignorant",
+    "title": "Ignorant",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-ignorant/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-impulsive",
+    "title": "Impulsive",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-impulsive/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-indecisive",
+    "title": "Indecisive",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-indecisive/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-injury-prone",
+    "title": "Injury Prone",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-injury-prone/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-lazy",
+    "title": "Lazy",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-lazy/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-lead-footed",
+    "title": "Lead Footed",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-lead-footed/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-malnourished",
+    "title": "Malnourished",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-malnourished/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-overburdened",
+    "title": "Overburdened",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-overburdened/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-overconfident",
+    "title": "Overconfident",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-overconfident/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-overly-cautious",
+    "title": "Overly Cautious",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-overly-cautious/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-paranoid",
+    "title": "Paranoid",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-paranoid/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-poor-depth-perception",
+    "title": "Poor Depth Perception",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-poor-depth-perception/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-shaky-hands",
+    "title": "Shaky Hands",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-shaky-hands/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-short-tempered",
+    "title": "Short Tempered",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-short-tempered/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-sleepy",
+    "title": "Sleepy",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-sleepy/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-slow-reflexes",
+    "title": "Slow Reflexes",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-slow-reflexes/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-stiff-jointed",
+    "title": "Stiff Jointed",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-stiff-jointed/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-superstitious",
+    "title": "Superstitious",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-superstitious/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-tone-deaf",
+    "title": "Tone Deaf",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-tone-deaf/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-tunnel-vision",
+    "title": "Tunnel Vision",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-tunnel-vision/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-uncoordinated",
+    "title": "Uncoordinated",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-uncoordinated/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-unprepared",
+    "title": "Unprepared",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-unprepared/tools/content.md"
+  },
+  {
+    "dir": "flaw",
+    "slug": "flaw-weak-grip",
+    "title": "Weak Grip",
+    "category": "flaw",
+    "content_path": "assets/content/entries/flaw/flaw-weak-grip/tools/content.md"
+  },
+  {
+    "dir": "race",
+    "slug": "race-dwarf",
+    "title": "Dwarf",
+    "category": "race",
+    "content_path": "assets/content/entries/race/race-dwarf/tools/content.md"
+  },
+  {
+    "dir": "race",
+    "slug": "race-elf",
+    "title": "Elf",
+    "category": "race",
+    "content_path": "assets/content/entries/race/race-elf/tools/content.md"
+  },
+  {
+    "dir": "race",
+    "slug": "race-gnome",
+    "title": "Gnome",
+    "category": "race",
+    "content_path": "assets/content/entries/race/race-gnome/tools/content.md"
+  },
+  {
+    "dir": "race",
+    "slug": "race-half-orc",
+    "title": "Half Orc",
+    "category": "race",
+    "content_path": "assets/content/entries/race/race-half-orc/tools/content.md"
+  },
+  {
+    "dir": "race",
+    "slug": "race-halfling",
+    "title": "Halfling",
+    "category": "race",
+    "content_path": "assets/content/entries/race/race-halfling/tools/content.md"
+  },
+  {
+    "dir": "race",
+    "slug": "race-human",
+    "title": "Human (Race)",
+    "category": "race",
+    "content_path": "assets/content/entries/race/race-human/tools/content.md"
+  },
+  {
+    "dir": "rule",
+    "slug": "rule-action-economy-and-rounds",
+    "title": "Action Economy and Rounds",
+    "category": "rule",
+    "content_path": "assets/content/entries/rule/rule-action-economy-and-rounds/tools/content.md"
+  },
+  {
+    "dir": "rule",
+    "slug": "rule-attacks-damage-and-defenses",
+    "title": "Attacks, Damage, and Defenses",
+    "category": "rule",
+    "content_path": "assets/content/entries/rule/rule-attacks-damage-and-defenses/tools/content.md"
+  },
+  {
+    "dir": "rule",
+    "slug": "rule-character-creation-and-backgrounds",
+    "title": "Character Creation and Backgrounds",
+    "category": "rule",
+    "content_path": "assets/content/entries/rule/rule-character-creation-and-backgrounds/tools/content.md"
+  },
+  {
+    "dir": "rule",
+    "slug": "rule-classes-and-class-identity",
+    "title": "Classes and Class Identity",
+    "category": "rule",
+    "content_path": "assets/content/entries/rule/rule-classes-and-class-identity/tools/content.md"
+  },
+  {
+    "dir": "rule",
+    "slug": "rule-consumables-loot-and-economy",
+    "title": "Consumables, Loot, and Economy",
+    "category": "rule",
+    "content_path": "assets/content/entries/rule/rule-consumables-loot-and-economy/tools/content.md"
+  },
+  {
+    "dir": "rule",
+    "slug": "rule-dying-rest-and-recovery",
+    "title": "Dying, Rest, and Recovery",
+    "category": "rule",
+    "content_path": "assets/content/entries/rule/rule-dying-rest-and-recovery/tools/content.md"
+  },
+  {
+    "dir": "rule",
+    "slug": "rule-encounter-building-and-difficulty",
+    "title": "Encounter Building and Difficulty",
+    "category": "rule",
+    "content_path": "assets/content/entries/rule/rule-encounter-building-and-difficulty/tools/content.md"
+  },
+  {
+    "dir": "rule",
+    "slug": "rule-equipment-armor-and-shields",
+    "title": "Equipment, Armor, and Shields",
+    "category": "rule",
+    "content_path": "assets/content/entries/rule/rule-equipment-armor-and-shields/tools/content.md"
+  },
+  {
+    "dir": "rule",
+    "slug": "rule-gm-worldbuilding-and-npcs",
+    "title": "GM Worldbuilding and NPCs",
+    "category": "rule",
+    "content_path": "assets/content/entries/rule/rule-gm-worldbuilding-and-npcs/tools/content.md"
+  },
+  {
+    "dir": "rule",
+    "slug": "rule-initiative",
+    "title": "Initiative",
+    "category": "rule",
+    "content_path": "assets/content/entries/rule/rule-initiative/tools/content.md"
+  },
+  {
+    "dir": "rule",
+    "slug": "rule-leveling-and-feature-progression",
+    "title": "Leveling and Feature Progression",
+    "category": "rule",
+    "content_path": "assets/content/entries/rule/rule-leveling-and-feature-progression/tools/content.md"
+  },
+  {
+    "dir": "rule",
+    "slug": "rule-mass-battle-and-unit-combat",
+    "title": "Mass Battle and Unit Combat",
+    "category": "rule",
+    "content_path": "assets/content/entries/rule/rule-mass-battle-and-unit-combat/tools/content.md"
+  },
+  {
+    "dir": "rule",
+    "slug": "rule-monster-roles-and-stat-profiles",
+    "title": "Monster Roles and Stat Profiles",
+    "category": "rule",
+    "content_path": "assets/content/entries/rule/rule-monster-roles-and-stat-profiles/tools/content.md"
+  },
+  {
+    "dir": "rule",
+    "slug": "rule-movement-positioning-and-opportunity",
+    "title": "Movement, Positioning, and Opportunity",
+    "category": "rule",
+    "content_path": "assets/content/entries/rule/rule-movement-positioning-and-opportunity/tools/content.md"
+  },
+  {
+    "dir": "rule",
+    "slug": "rule-races-and-ancestry-features",
+    "title": "Races and Ancestry Features",
+    "category": "rule",
+    "content_path": "assets/content/entries/rule/rule-races-and-ancestry-features/tools/content.md"
+  },
+  {
+    "dir": "rule",
+    "slug": "rule-spells-and-casting-systems",
+    "title": "Spells and Casting Systems",
+    "category": "rule",
+    "content_path": "assets/content/entries/rule/rule-spells-and-casting-systems/tools/content.md"
+  },
+  {
+    "dir": "rule",
+    "slug": "rule-weapons-mastery-and-enchantments",
+    "title": "Weapons, Mastery, and Enchantments",
+    "category": "rule",
+    "content_path": "assets/content/entries/rule/rule-weapons-mastery-and-enchantments/tools/content.md"
+  },
+  {
+    "dir": "shield",
+    "slug": "shield-large-shield",
+    "title": "Large shield",
+    "category": "item > shield",
+    "content_path": "assets/content/entries/shield/shield-large-shield/tools/content.md"
+  },
+  {
+    "dir": "shield",
+    "slug": "shield-medium-shield",
+    "title": "Medium shield",
+    "category": "item > shield",
+    "content_path": "assets/content/entries/shield/shield-medium-shield/tools/content.md"
+  },
+  {
+    "dir": "shield",
+    "slug": "shield-small-shield",
+    "title": "Small shield",
+    "category": "item > shield",
+    "content_path": "assets/content/entries/shield/shield-small-shield/tools/content.md"
+  },
+  {
+    "dir": "skill",
+    "slug": "adventure-hook",
+    "title": "Adventure Hook",
+    "category": "skill",
+    "content_path": "assets/content/entries/skill/adventure-hook/tools/content.md"
+  },
+  {
+    "dir": "skill",
+    "slug": "build-npc",
+    "title": "Build NPC",
+    "category": "skill",
+    "content_path": "assets/content/entries/skill/build-npc/tools/content.md"
+  },
+  {
+    "dir": "skill",
+    "slug": "create-character",
+    "title": "Create Character",
+    "category": "skill",
+    "content_path": "assets/content/entries/skill/create-character/tools/content.md"
+  },
+  {
+    "dir": "skill",
+    "slug": "explain-rule",
+    "title": "Explain Rule",
+    "category": "skill",
+    "content_path": "assets/content/entries/skill/explain-rule/tools/content.md"
+  },
+  {
+    "dir": "skill",
+    "slug": "generate-adventure",
+    "title": "Generate Adventure",
+    "category": "skill",
+    "content_path": "assets/content/entries/skill/generate-adventure/tools/content.md"
+  },
+  {
+    "dir": "skill",
+    "slug": "level-up-character",
+    "title": "Level Up Character",
+    "category": "skill",
+    "content_path": "assets/content/entries/skill/level-up-character/tools/content.md"
+  },
+  {
+    "dir": "skill",
+    "slug": "level-up-check",
+    "title": "Level Up Check",
+    "category": "skill",
+    "content_path": "assets/content/entries/skill/level-up-check/tools/content.md"
+  },
+  {
+    "dir": "skill",
+    "slug": "loot-and-rewards",
+    "title": "Loot and Rewards",
+    "category": "skill",
+    "content_path": "assets/content/entries/skill/loot-and-rewards/tools/content.md"
+  },
+  {
+    "dir": "skill",
+    "slug": "make-encounter",
+    "title": "Make Encounter",
+    "category": "skill",
+    "content_path": "assets/content/entries/skill/make-encounter/tools/content.md"
+  },
+  {
+    "dir": "skill",
+    "slug": "make-monster",
+    "title": "Make Monster",
+    "category": "skill",
+    "content_path": "assets/content/entries/skill/make-monster/tools/content.md"
+  },
+  {
+    "dir": "skill",
+    "slug": "mass-battle",
+    "title": "Mass Battle",
+    "category": "skill",
+    "content_path": "assets/content/entries/skill/mass-battle/tools/content.md"
+  },
+  {
+    "dir": "skill",
+    "slug": "monster-from-theme",
+    "title": "Monster From Theme",
+    "category": "skill",
+    "content_path": "assets/content/entries/skill/monster-from-theme/tools/content.md"
+  },
+  {
+    "dir": "skill",
+    "slug": "npc-generator",
+    "title": "Npc Generator",
+    "category": "skill",
+    "content_path": "assets/content/entries/skill/npc-generator/tools/content.md"
+  },
+  {
+    "dir": "skill",
+    "slug": "quick-roll",
+    "title": "Quick Roll",
+    "category": "skill",
+    "content_path": "assets/content/entries/skill/quick-roll/tools/content.md"
+  },
+  {
+    "dir": "skill",
+    "slug": "run-session",
+    "title": "Run Session",
+    "category": "skill",
+    "content_path": "assets/content/entries/skill/run-session/tools/content.md"
+  },
+  {
+    "dir": "skill",
+    "slug": "session-prep",
+    "title": "Session Prep",
+    "category": "skill",
+    "content_path": "assets/content/entries/skill/session-prep/tools/content.md"
+  },
+  {
+    "dir": "skill",
+    "slug": "treasure-drop",
+    "title": "Treasure Drop",
+    "category": "skill",
+    "content_path": "assets/content/entries/skill/treasure-drop/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-aegis-of-combat",
+    "title": "Aegis of Combat",
+    "category": "spell > divine",
+    "content_path": "assets/content/entries/spell/spell-aegis-of-combat/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-aegis-of-light",
+    "title": "Aegis of Light",
+    "category": "spell > divine",
+    "content_path": "assets/content/entries/spell/spell-aegis-of-light/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-aegis-of-speed",
+    "title": "Aegis of Speed",
+    "category": "spell > divine",
+    "content_path": "assets/content/entries/spell/spell-aegis-of-speed/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-aegis-of-tactics",
+    "title": "Aegis of Tactics",
+    "category": "spell > divine",
+    "content_path": "assets/content/entries/spell/spell-aegis-of-tactics/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-animal-whisper",
+    "title": "Animal Whisper",
+    "category": "spell > nature",
+    "content_path": "assets/content/entries/spell/spell-animal-whisper/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-arcane-shield",
+    "title": "Arcane shield",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-arcane-shield/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-blessing-of-the-moon",
+    "title": "Blessing of the Moon",
+    "category": "spell > divine",
+    "content_path": "assets/content/entries/spell/spell-blessing-of-the-moon/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-blessing-of-the-stars",
+    "title": "Blessing of the Stars",
+    "category": "spell > divine",
+    "content_path": "assets/content/entries/spell/spell-blessing-of-the-stars/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-blessing-of-the-sun",
+    "title": "Blessing of the Sun",
+    "category": "spell > divine",
+    "content_path": "assets/content/entries/spell/spell-blessing-of-the-sun/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-blinding-light",
+    "title": "Blinding light",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-blinding-light/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-blizzard",
+    "title": "Blizzard",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-blizzard/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-celestial-assistance",
+    "title": "Celestial Assistance",
+    "category": "spell > divine",
+    "content_path": "assets/content/entries/spell/spell-celestial-assistance/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-chameleon",
+    "title": "Chameleon",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-chameleon/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-chrono-freeze",
+    "title": "Chrono Freeze",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-chrono-freeze/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-divine-vision",
+    "title": "Divine Vision",
+    "category": "spell > divine",
+    "content_path": "assets/content/entries/spell/spell-divine-vision/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-dryad-nightmare",
+    "title": "Dryad Nightmare",
+    "category": "spell > nature",
+    "content_path": "assets/content/entries/spell/spell-dryad-nightmare/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-earth-roots",
+    "title": "Earth Roots",
+    "category": "spell > nature",
+    "content_path": "assets/content/entries/spell/spell-earth-roots/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-fairy-ring",
+    "title": "Fairy Ring",
+    "category": "spell > nature",
+    "content_path": "assets/content/entries/spell/spell-fairy-ring/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-fire-blast",
+    "title": "Fire Blast",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-fire-blast/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-fire-whip",
+    "title": "Fire Whip",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-fire-whip/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-fireball",
+    "title": "Fireball",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-fireball/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-force-field",
+    "title": "Force Field",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-force-field/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-form-substance",
+    "title": "Form substance",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-form-substance/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-gathering-storm",
+    "title": "Gathering Storm",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-gathering-storm/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-healing-hand",
+    "title": "Healing Hand",
+    "category": "spell > divine",
+    "content_path": "assets/content/entries/spell/spell-healing-hand/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-healing-word",
+    "title": "Healing Word",
+    "category": "spell > divine",
+    "content_path": "assets/content/entries/spell/spell-healing-word/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-invisibility",
+    "title": "Invisibility",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-invisibility/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-jump-lightning",
+    "title": "Jump Lightning",
+    "category": "spell > nature",
+    "content_path": "assets/content/entries/spell/spell-jump-lightning/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-levitate",
+    "title": "Levitate",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-levitate/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-lightning-bolt",
+    "title": "Lightning Bolt",
+    "category": "spell > nature",
+    "content_path": "assets/content/entries/spell/spell-lightning-bolt/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-magic-missile",
+    "title": "Magic Missile",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-magic-missile/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-mist-caller",
+    "title": "Mist Caller",
+    "category": "spell > nature",
+    "content_path": "assets/content/entries/spell/spell-mist-caller/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-oath-of-the-dark",
+    "title": "Oath of the Dark",
+    "category": "spell > rune",
+    "content_path": "assets/content/entries/spell/spell-oath-of-the-dark/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-orison-of-harmony",
+    "title": "Orison of Harmony",
+    "category": "spell > divine",
+    "content_path": "assets/content/entries/spell/spell-orison-of-harmony/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-orison-of-heroism",
+    "title": "Orison of Heroism",
+    "category": "spell > divine",
+    "content_path": "assets/content/entries/spell/spell-orison-of-heroism/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-orison-of-unification",
+    "title": "Orison of Unification",
+    "category": "spell > divine",
+    "content_path": "assets/content/entries/spell/spell-orison-of-unification/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-orison-of-unity",
+    "title": "Orison of Unity",
+    "category": "spell > divine",
+    "content_path": "assets/content/entries/spell/spell-orison-of-unity/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-orison-of-vitality",
+    "title": "Orison of Vitality",
+    "category": "spell > divine",
+    "content_path": "assets/content/entries/spell/spell-orison-of-vitality/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-power-beacon",
+    "title": "Power Beacon",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-power-beacon/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-rune-of-confusion",
+    "title": "Rune of Confusion",
+    "category": "spell > rune",
+    "content_path": "assets/content/entries/spell/spell-rune-of-confusion/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-rune-of-conveyance",
+    "title": "Rune of Conveyance",
+    "category": "spell > rune",
+    "content_path": "assets/content/entries/spell/spell-rune-of-conveyance/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-rune-of-curses",
+    "title": "Rune of Curses",
+    "category": "spell > rune",
+    "content_path": "assets/content/entries/spell/spell-rune-of-curses/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-rune-of-hope",
+    "title": "Rune of Hope",
+    "category": "spell > rune",
+    "content_path": "assets/content/entries/spell/spell-rune-of-hope/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-rune-of-protection",
+    "title": "Rune of Protection",
+    "category": "spell > rune",
+    "content_path": "assets/content/entries/spell/spell-rune-of-protection/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-rune-of-redemption",
+    "title": "Rune of Redemption",
+    "category": "spell > rune",
+    "content_path": "assets/content/entries/spell/spell-rune-of-redemption/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-rune-of-stone-shield",
+    "title": "Rune of Stone Shield",
+    "category": "spell > rune",
+    "content_path": "assets/content/entries/spell/spell-rune-of-stone-shield/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-rune-of-the-deep",
+    "title": "Rune of the Deep",
+    "category": "spell > rune",
+    "content_path": "assets/content/entries/spell/spell-rune-of-the-deep/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-rune-of-the-flame-forge",
+    "title": "Rune of the Flame Forge",
+    "category": "spell > rune",
+    "content_path": "assets/content/entries/spell/spell-rune-of-the-flame-forge/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-rune-of-the-mountain",
+    "title": "Rune of the Mountain",
+    "category": "spell > rune",
+    "content_path": "assets/content/entries/spell/spell-rune-of-the-mountain/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-rune-of-the-well",
+    "title": "Rune of the Well",
+    "category": "spell > rune",
+    "content_path": "assets/content/entries/spell/spell-rune-of-the-well/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-rune-of-the-whisper",
+    "title": "Rune of the Whisper",
+    "category": "spell > rune",
+    "content_path": "assets/content/entries/spell/spell-rune-of-the-whisper/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-rune-of-valor",
+    "title": "Rune of Valor",
+    "category": "spell > rune",
+    "content_path": "assets/content/entries/spell/spell-rune-of-valor/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-shapeshift",
+    "title": "Shapeshift",
+    "category": "spell > nature",
+    "content_path": "assets/content/entries/spell/spell-shapeshift/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-solar-flare",
+    "title": "Solar Flare",
+    "category": "spell > nature",
+    "content_path": "assets/content/entries/spell/spell-solar-flare/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-spell-stone",
+    "title": "Spell Stone",
+    "category": "spell > rune",
+    "content_path": "assets/content/entries/spell/spell-spell-stone/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-storm-of-ice",
+    "title": "Storm of Ice",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-storm-of-ice/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-summon",
+    "title": "Summon",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-summon/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-surging-beam-of-radiance",
+    "title": "Surging Beam of Radiance",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-surging-beam-of-radiance/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-tectonic-tremor",
+    "title": "Tectonic Tremor",
+    "category": "spell > nature",
+    "content_path": "assets/content/entries/spell/spell-tectonic-tremor/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-teleportation",
+    "title": "Teleportation",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-teleportation/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-thorn-strike",
+    "title": "Thorn strike",
+    "category": "spell > nature",
+    "content_path": "assets/content/entries/spell/spell-thorn-strike/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-thorn-wall",
+    "title": "Thorn wall",
+    "category": "spell > nature",
+    "content_path": "assets/content/entries/spell/spell-thorn-wall/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-time-warp",
+    "title": "Time warp",
+    "category": "spell > arcane",
+    "content_path": "assets/content/entries/spell/spell-time-warp/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-verdant-fury",
+    "title": "Verdant Fury",
+    "category": "spell > nature",
+    "content_path": "assets/content/entries/spell/spell-verdant-fury/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-ward-rune",
+    "title": "Ward Rune",
+    "category": "spell > rune",
+    "content_path": "assets/content/entries/spell/spell-ward-rune/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-wild-speak",
+    "title": "Wild speak",
+    "category": "spell > nature",
+    "content_path": "assets/content/entries/spell/spell-wild-speak/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-wind-fury",
+    "title": "Wind Fury",
+    "category": "spell > nature",
+    "content_path": "assets/content/entries/spell/spell-wind-fury/tools/content.md"
+  },
+  {
+    "dir": "spell",
+    "slug": "spell-woodland-vengeance",
+    "title": "Woodland Vengeance",
+    "category": "spell > nature",
+    "content_path": "assets/content/entries/spell/spell-woodland-vengeance/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-arming-sword",
+    "title": "Arming sword",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-arming-sword/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-bastardsword",
+    "title": "Bastardsword",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-bastardsword/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-battle-axe",
+    "title": "Battle axe",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-battle-axe/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-club",
+    "title": "Club",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-club/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-cross-bow",
+    "title": "Cross bow",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-cross-bow/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-cutlass",
+    "title": "Cutlass",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-cutlass/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-dagger",
+    "title": "Dagger",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-dagger/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-falchion",
+    "title": "Falchion",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-falchion/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-flail",
+    "title": "Flail",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-flail/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-great-axe",
+    "title": "Great axe",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-great-axe/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-great-hammer",
+    "title": "Great Hammer",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-great-hammer/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-greatsword",
+    "title": "Greatsword",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-greatsword/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-halberd",
+    "title": "Halberd",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-halberd/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-hand-axe",
+    "title": "Hand axe",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-hand-axe/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-hand-cross-bow",
+    "title": "Hand cross bow",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-hand-cross-bow/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-long-bow",
+    "title": "Long bow",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-long-bow/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-longsword",
+    "title": "Longsword",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-longsword/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-mace",
+    "title": "Mace",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-mace/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-morning-star",
+    "title": "Morning star",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-morning-star/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-pike",
+    "title": "Pike",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-pike/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-rapier",
+    "title": "Rapier",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-rapier/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-sabre",
+    "title": "Sabre",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-sabre/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-short-bow",
+    "title": "Short bow",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-short-bow/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-spear",
+    "title": "Spear",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-spear/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-staff",
+    "title": "Staff",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-staff/tools/content.md"
+  },
+  {
+    "dir": "weapon",
+    "slug": "weapon-warhammer",
+    "title": "Warhammer",
+    "category": "item > weapon",
+    "content_path": "assets/content/entries/weapon/weapon-warhammer/tools/content.md"
+  }
+]

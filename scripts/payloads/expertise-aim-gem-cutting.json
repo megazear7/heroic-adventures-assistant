@@ -1,0 +1,67 @@
+{
+  "spaceId": "1xrzrik78qmb",
+  "environmentId": "master",
+  "contentTypeId": "ruleReference",
+  "fields": {
+    "title": {
+      "en-US": "Gem Cutting"
+    },
+    "category": {
+      "en-US": "expertise"
+    },
+    "content": {
+      "en-US": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "heading-1",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Gem Cutting",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Category:",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " Aim",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Gem Cutting expertise represents a character\u2019s mastery in shaping and polishing gems with meticulous accuracy, enhancing their beauty, value, or magical potency. Proficient gem cutters can transform raw stones into dazzling jewels, cut facets to capture light perfectly, or even inscribe tiny runes to imbue the gems with enchantments. In a realm where gems often hold mystical significance\u2014powering artifacts, focusing spells, or serving as currency\u2014this skill is crucial for crafters, enchanters, and treasure hunters alike. It demands a steady hand, keen eye, and deep understanding of crystalline structures, allowing characters to unlock the full potential of these precious resources while showcasing their finesse and attention to detail.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

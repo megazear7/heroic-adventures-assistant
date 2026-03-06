@@ -40,4 +40,4 @@ Add d6 to the healing of any spell you cast that already heals.
 
 Add 4 to the range of all spells. Any spell that has a range of adjacent instead has a range of 4.
 
-<img src="assets/images/media/image26.png" style="width:9in;height:4.5in" />
+<img src="assets/armored_figure_sunlit_city.png" style="width:9in;height:4.5in" />

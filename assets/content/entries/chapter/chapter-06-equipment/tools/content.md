@@ -1,4 +1,4 @@
-# <img src="assets/images/media/image38.png" style="width:8.98542in;height:4.49236in" />Armor
+# <img src="assets/three_suits_of_armor.png" style="width:8.98542in;height:4.49236in" />Armor
 
 In *Heroic Adventures*, armor is critical to staying alive. While it slows you down, as represented by the decrease in agility, it also gives you toughness, which is subtracted from most damage that you take. While it might seem like the penalty for wearing armor is high, in reality that increased toughness means that you are preserving your health every time that you get hit, and this is a massive benefit.
 
@@ -8,7 +8,7 @@ In some cases, however, armor can be less than helpful. If you are fighting a gi
 
 In other circumstances, such as when you are fighting against small weapons from many opponents, armor can make you nearly invincible to their attacks. Every hit they do might barely do enough damage, if any, to penetrate your damage reduction. When this happens, your opponents are going to have to look for ways to get around your armor. This can be done with attacks that ignore armor such as fire attacks, mental attacks, spells, and so forth.
 
-<img src="assets/images/media/image39.png" style="width:9.02847in;height:4.51389in" />
+<img src="assets/five_armored_outfits.png" style="width:9.02847in;height:4.51389in" />
 
 ## Armor Costs
 
@@ -22,7 +22,7 @@ In other circumstances, such as when you are fighting against small weapons from
 
 ## 
 
-## <img src="assets/images/media/image40.png" style="width:9.08768in;height:4.54384in" />
+## <img src="assets/three_armor_suits_rock_wall.png" style="width:9.08768in;height:4.54384in" />
 
 ## Gambeson
 
@@ -62,7 +62,7 @@ Reaction: Use when you are about to be attacked. Gain +X damage reduction until 
 
 Reaction: Use when you are about to be attacked. Ignore the armor agility penalty until the end of the current initiative card.
 
-##### <img src="assets/images/media/image41.png" style="width:8.96389in;height:4.48194in" />
+##### <img src="assets/three_armor_suits_garden.png" style="width:8.96389in;height:4.48194in" />
 
 ##### 
 
@@ -148,7 +148,7 @@ Reaction: Use at the start of your turn after taking damage. Regain X health.
 
 ##### Armor of Arcana
 
-<img src="assets/images/media/image42.png" style="width:6.33333in;height:6.51337in" />Reaction: Use when targeted by a spell. Gain +X to your willpower defense roll.
+<img src="assets/stone_forge_brazier_cave.png" style="width:6.33333in;height:6.51337in" />Reaction: Use when targeted by a spell. Gain +X to your willpower defense roll.
 
 ##### Armor of Wrath
 
@@ -166,7 +166,7 @@ Reaction: Use when you are about to be attacked. Gain X block against that attac
 
 Reaction: Use when you are about to be attacked. The attacker has disadvantage on its attack roll.
 
-<img src="assets/images/media/image43.png" style="width:8.96104in;height:4.48052in" />
+<img src="assets/three_shields_stone_wall.png" style="width:8.96104in;height:4.48052in" />
 
 # Shields
 
@@ -182,7 +182,7 @@ Some attacks might mention that they ignore shields, in which case you would not
 | Medium shield | 20 coins | 150 coins | 750 coins     |
 | Large shield  | 50 coins | 200 coins | 1,000 coins   |
 
-<img src="assets/images/media/image44.png" style="width:9.03896in;height:4.51948in" />
+<img src="assets/three_circular_shields_top_down.png" style="width:9.03896in;height:4.51948in" />
 
 ## 
 
@@ -222,7 +222,7 @@ Move the attacker back up to X spaces.
 
 Do X damage to the attacker that ignores damage reduction.
 
-##### <img src="assets/images/media/image45.png" style="width:8.98681in;height:4.49306in" />
+##### <img src="assets/three_shields_display.png" style="width:8.98681in;height:4.49306in" />
 
 ##### 
 
@@ -270,7 +270,7 @@ Gain +X toughness until the start of your next turn.
 
 ##### Shield of Flames
 
-<img src="assets/images/media/image46.png" style="width:7.04918in;height:4.42695in" />Deal X fire damage to all adjacent enemies.
+<img src="assets/viking_shield_wall_advance.png" style="width:7.04918in;height:4.42695in" />Deal X fire damage to all adjacent enemies.
 
 ##### Shield of Defiance
 
@@ -300,7 +300,7 @@ All allies within 3 spaces gain +X temporary health.
 
 One adjacent ally may take a minor movement or make a bonus attack.
 
-<img src="assets/images/media/image47.png" style="width:8.85714in;height:4.42857in" />
+<img src="assets/medieval_weapons_display.png" style="width:8.85714in;height:4.42857in" />
 
 # 
 
@@ -314,17 +314,17 @@ One adjacent ally may take a minor movement or make a bonus attack.
 
 # 
 
-# <img src="assets/images/media/image48.png" style="width:0.57596in;height:2.22065in" />Weapons
+# <img src="assets/ornate_mace_weapon.png" style="width:0.57596in;height:2.22065in" />Weapons
 
 In *Heroic Adventures*, the most common action is the weapon attack. Weapon attacks can be performed during a major action, before or after movement. Other actions will indicate if and when you can make a weapon attack, as detailed in the action description.
 
-<img src="assets/images/media/image49.png" style="width:0.48333in;height:2.61319in" />Each weapon has a certain cost for the standard, artisan, and master crafted versions of the weapon. Some weapons are one handed, which means that they can be equipped simultaneously with a second weapon, shield, other object, or an open hand. Additionally, weapons will have a size of small, medium, or large. Various game effects may reference the size of the weapon.
+<img src="assets/spear_vertical_display.png" style="width:0.48333in;height:2.61319in" />Each weapon has a certain cost for the standard, artisan, and master crafted versions of the weapon. Some weapons are one handed, which means that they can be equipped simultaneously with a second weapon, shield, other object, or an open hand. Additionally, weapons will have a size of small, medium, or large. Various game effects may reference the size of the weapon.
 
 Weapons have a range, such as 1 space, 2 spaces, or more. Most melee weapons have a range of 1 space, some will have a longer range. Ranged weapons such as bows will have a much longer range.
 
 Additionally, weapons will modify your base initiative. This means that fast weapons will have a higher initiative and will be more likely to get bonus attacks each round. Slow weapons will likely do more damage but will lower your initiative meaning you are less likely to get bonus attacks. Lastly, each weapon will have a damage dice characteristic which tells you what dice to roll when you hit with an attack.
 
-<img src="assets/images/media/image50.png" style="width:1.39514in;height:1.38542in" /><img src="assets/images/media/image51.png" style="width:0.94861in;height:2.61319in" /><img src="assets/images/media/image52.png" style="width:0.78194in;height:2.07361in" />
+<img src="assets/hand_axe_illustration.png" style="width:1.39514in;height:1.38542in" /><img src="assets/medieval_sword_illustration.png" style="width:0.94861in;height:2.61319in" /><img src="assets/warhammer_vertical_display.png" style="width:0.78194in;height:2.07361in" />
 
 | Item          | Cost     | Artisan   | Mastercrafted |
 |---------------|----------|-----------|---------------|
@@ -355,13 +355,13 @@ Additionally, weapons will modify your base initiative. This means that fast wea
 | Hand crossbow | 15       | 300 coins | 1,750 coins   |
 | Crossbow      | 25 coins | 350 coins | 2,250 coins   |
 
-## <img src="assets/images/media/image53.png" style="width:8.98701in;height:4.49351in" />Dagger
+## <img src="assets/five_swords_in_stone.png" style="width:8.98701in;height:4.49351in" />Dagger
 
 #### Small blade \| One handed \| Melee \| 1d4 damage \| Range 1 \| +4 initiative
 
 Bonus Action: If this weapon is your secondary weapon, you may make an attack against the target with this weapon in addition to attacking with your primary weapon. Daggers may act as a ranged weapon that does 2d4 damage and have range 10. Daggers can be stored as a consumable. After throwing a dagger, you may immediately draw another dagger if one is available as a consumable. You may recover these daggers after the encounter.
 
-## <img src="assets/images/media/image54.png" style="width:8.93507in;height:4.46753in" />Arming sword
+## <img src="assets/seven_swords_stone_ledge.png" style="width:8.93507in;height:4.46753in" />Arming sword
 
 #### Medium blade \| One handed \| Melee \| 1d6 damage \| Range 1 \| +2 initiative
 
@@ -403,7 +403,7 @@ Bonus Action: Attack with advantage
 
 #### Large blade \| Two handed \| Melee \| 1d10 damage \| Range 1 \| +0 initiative
 
-<img src="assets/images/media/image55.png" style="width:4.14097in;height:4.33333in" />Bonus Action: Attack with advantage
+<img src="assets/sword_on_black_background.png" style="width:4.14097in;height:4.33333in" />Bonus Action: Attack with advantage
 
 ## Greatsword
 
@@ -411,7 +411,7 @@ Bonus Action: Attack with advantage
 
 Bonus Action: Attack with advantage
 
-## <img src="assets/images/media/image56.png" style="width:9.01299in;height:4.50649in" />Hand axe
+## <img src="assets/three_axes_stone_floor.png" style="width:9.01299in;height:4.50649in" />Hand axe
 
 #### Small axe \| One handed \| Melee \| 1d4 damage \| Range 1 \| +1 initiative
 
@@ -429,7 +429,7 @@ Attacks made with two hands ignore shields.
 
 Attacks made with a great axe ignore shields
 
-## <img src="assets/images/media/image57.png" style="width:9.01299in;height:4.50649in" /><img src="assets/images/media/image58.png" style="width:2.16181in;height:2.39792in" />Mace
+## <img src="assets/three_hammers_display.png" style="width:9.01299in;height:4.50649in" /><img src="assets/war_mace_axe_hybrid.png" style="width:2.16181in;height:2.39792in" />Mace
 
 #### Medium blunt \| One handed \| Melee \| 1d6 damage \| Range 1 \| +1 initiative
 
@@ -471,7 +471,7 @@ Bonus Action: Bonus attacks made with warhammers ignore shields
 
 Gain +3 from advantage with attacks made with this weapon.
 
-## <img src="assets/images/media/image59.png" style="width:9.03896in;height:4.51948in" />Spear
+## <img src="assets/five_spears_rock_wall.png" style="width:9.03896in;height:4.51948in" />Spear
 
 #### Medium polearm \| One handed \| Melee \| 1d6 damage \| Range 2 \| +1 initiative
 
@@ -495,7 +495,7 @@ Attacks made with a halberd ignore toughness that is gained from equipment
 
 Bonus Action: Make two attacks against two different targets, each with disadvantage.
 
-## <img src="assets/images/media/image60.png" style="width:9.03896in;height:4.51948in" />Short bow
+## <img src="assets/row_of_arrows_in_ground.png" style="width:9.03896in;height:4.51948in" />Short bow
 
 #### Small ranged \| Two handed \| 2d4 damage \| Range 20 \| +0 initiative
 
@@ -731,7 +731,7 @@ Your ranged weapon may act as a melee weapon. It does one less damage dice of da
 
 If you make a ranged attack against a creature that is adjacent to a single ally and miss, that ally does not need to roll an agility defense roll against your attack. If you have already taken the Close Range Fighting feat, then up to two allies can be adjacent to your target without them having to make a defense roll against your attack when you miss.
 
-<img src="assets/images/media/image61.png" style="width:9.11688in;height:4.55844in" />
+<img src="assets/glass_jars_stone_hall.png" style="width:9.11688in;height:4.55844in" />
 
 # Alchemists Guild
 
@@ -779,7 +779,7 @@ Minor action: A creature is put to sleep for 4d6 hours.
 
 Minor action: Move or swap spell enchantments associated between two items.
 
-# <img src="assets/images/media/image62.png" style="width:8.96104in;height:4.48052in" />
+# <img src="assets/rustic_maproom_interior.png" style="width:8.96104in;height:4.48052in" />
 
 # 
 
@@ -803,7 +803,7 @@ Minor action: Move or swap spell enchantments associated between two items.
 
 The mages guild is a loose association of the magically adept that nevertheless wield and retain tremendous influence over the mortal races. Their magic abilities are always sought after whether for war, negotiation, or assassination. The mages guild is always looking to grow in knowledge and learning and so will readily interpret magic scrolls and artifacts. Their scribes will copy the symbols, ancient languages, and mysterious ciphers into their library, while providing their customers with the ability to use the scroll on their own.
 
-<img src="assets/images/media/image63.png" style="width:3.85917in;height:2.47541in" />
+<img src="assets/parchment_scroll_candlelight.png" style="width:3.85917in;height:2.47541in" />
 
 ## Scrolls
 
@@ -813,7 +813,7 @@ While adventuring, players will collect fragments that they can bring to a mages
 
 <table><thead><tr class="header"><th><blockquote><p>D20 Result</p></blockquote></th><th>Spells to Choose From</th></tr></thead><tbody><tr class="odd"><td>1 – 9</td><td>None</td></tr><tr class="even"><td>10</td><td>Arcane shield</td></tr><tr class="odd"><td>10</td><td>Blinding light</td></tr><tr class="even"><td>11</td><td>Blizzard</td></tr><tr class="odd"><td>11</td><td>Chameleon</td></tr><tr class="even"><td>12</td><td>Chrono Freeze</td></tr><tr class="odd"><td>12</td><td>Fireball</td></tr><tr class="even"><td>13</td><td>Fire blast</td></tr><tr class="odd"><td>13</td><td>Fire whip</td></tr><tr class="even"><td>14</td><td>Force field</td></tr><tr class="odd"><td>14</td><td>Form substance</td></tr><tr class="even"><td>15</td><td>Gathering storm</td></tr><tr class="odd"><td>15</td><td>Invisibility</td></tr><tr class="even"><td>16</td><td>Levitate</td></tr><tr class="odd"><td>16</td><td>Magic missile</td></tr><tr class="even"><td>17</td><td>Power beacon</td></tr><tr class="odd"><td>17</td><td>Storm of ice</td></tr><tr class="even"><td>18</td><td>Summon</td></tr><tr class="odd"><td>18</td><td>Surging beam of radiance</td></tr><tr class="even"><td>19</td><td>Teleportation</td></tr><tr class="odd"><td>19</td><td>Time warp</td></tr><tr class="even"><td>20</td><td>Choose any spell</td></tr></tbody></table>
 
-<img src="assets/images/media/image64.png" style="width:9.09091in;height:4.54545in" />
+<img src="assets/medieval_market_street.png" style="width:9.09091in;height:4.54545in" />
 
 # Mundane Items
 
@@ -857,7 +857,7 @@ A ferry boat holds up to 10 people but is not designed to travel on rough waters
 
 A sailing boat holds up to 20 people and can travel at sea.
 
-<img src="assets/images/media/image65.png" style="width:8.93507in;height:4.46753in" />
+<img src="assets/medieval_courtyard_stable.png" style="width:8.93507in;height:4.46753in" />
 
 # 
 

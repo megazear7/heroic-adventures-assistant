@@ -16,4 +16,4 @@ From a roleplay perspective, protégé’s provide an opportunity to expand the 
 
 Also, if you want a break from the main story, everyone can play their protégé character for a session. This can be a side quest to get the players used to their new characters and offer a change up to the normal game session.
 
-<img src="assets/images/media/image68.jpeg" style="width:8.90909in;height:11.58196in" />
+<img src="assets/warrior_standard_bearer.jpeg" style="width:8.90909in;height:11.58196in" />

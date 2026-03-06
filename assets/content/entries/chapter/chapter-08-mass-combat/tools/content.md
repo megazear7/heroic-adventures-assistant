@@ -113,4 +113,4 @@ The below are some examples of units that could be created.
 
 10 creatures, +3 all stats, +2 damage dice, automatically passes bravery checks
 
-<img src="assets/images/media/image69.jpeg" style="width:8.96104in;height:11.6495in" />
+<img src="assets/archer_exiting_cave_snow.jpeg" style="width:8.96104in;height:11.6495in" />
